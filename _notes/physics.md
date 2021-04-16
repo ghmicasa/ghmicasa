@@ -12,13 +12,13 @@ The equations of time dilation and length contractions as we know are
 
 <br/>
 
-$$L = {L_0}{\left( {1 - {{{v^2}} \over {{c^2}}}} \right)^{{1 \over 2}}}$$
+\(L = {L_0}{\left( {1 - \frac{{{v^2}}}{{{c^2}}}} \right)^{\frac{1}{2}}}\) 
 
 and 
 
 <br/>
 
-$$\Delta t = {{\Delta {t_0}} \over {{{\left( {1 - {{{v^2}} \over {{c^2}}}} \right)}^{{1 \over 2}}}}}$$ 
+\(\Delta t = \frac{{\Delta {t_0}}}{{{{\left( {1 - \frac{{{v^2}}}{{{c^2}}}} \right)}^{\frac{1}{2}}}}}\) 
 
 <br/>
 
@@ -31,7 +31,7 @@ The velocity $v$ that I am using has some value and for some reason I take it as
 
 <br/>
 
-$$v = {{dx} \over {dt}} = \mathop {\lim }\limits_{\Delta t \to 0} {{\Delta x} \over {\Delta t}} = \mathop {\lim }\limits_{t \to {t_0}} {{x - {x_0}} \over {t - {t_0}}}$$
+\(v = \frac{{dx}}{{dt}} = \mathop {\lim }\limits_{\Delta t \to 0} \frac{{\Delta x}}{{\Delta t}} = \mathop {\lim }\limits_{t \to {t_0}} \frac{{x - {x_0}}}{{t - {t_0}}}\) 
 
 <br/>
 <hr>
