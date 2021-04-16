@@ -36,3 +36,7 @@ The velocity $v$ that I am using has some value and for some reason I take it as
 <hr>
 
 Velocity as I know is "change in displacement over change in time". Let's take length contraction equation, as the length contract there must be some variation for the end points of a rod (say) to move across a point, causing change in $v$. So, why I am not taking some relativistic equation of $v$ here in the equation. I feel, somehow there is some connection between length contraction, time dilation and this velocity. There must be something in this $v$ which is not factored in these equations.
+
+$\sum_{i=1}^m y^{(i)}$
+
+$h_\theta(x) = \Large\frac{1}{1 + \mathcal{e}^{(-\theta^\top x)}}$
