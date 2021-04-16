@@ -17,6 +17,6 @@ Here, ${\Delta {t_0}}$ is time interval between two events, and ${L_0}$ is lengt
 
 The velocity $v$ that I am using has some value and for some reason I take it as a value and do not apply the definition <br/>
 
-$$v = {{dx} \over {dt}} = \mathop {\lim }\limits_{\Delta t \to 0} {{\Delta x} \over {\Delta t}} = \mathop {\lim }\limits_{t \to {t_0}} {{x - {x_0}} \over {t - {t_0}}}$$<br/>
+$$v = {dx \over dt} = \mathop {\lim }\limits_{\Delta t \to 0} {{\Delta x} \over {\Delta t}} = \mathop {\lim }\limits_{t \to {t_0}} {{x - {x_0}} \over {t - {t_0}}}$$<br/>
 
 Velocity as I know is "change in displacement over change in time". Let's take length contraction equation, as the length contract there must be some variation for the end points of a rod (say) to move across a point, causing change in $v$. So, why I am not taking some relativistic equation of $v$ here in the equation. I feel, somehow there is some connection between length contraction, time dilation and this velocity. There must be something in this $v$ which is not factored in these equations.
