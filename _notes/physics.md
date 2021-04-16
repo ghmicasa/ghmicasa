@@ -12,7 +12,7 @@ The equations of time dilation and length contractions as we know are
 
 <br/>
 
-$\(L = {L_0}{\left( {1 - \frac{{{v^2}}}{{{c^2}}}} \right)^{\frac{1}{2}}}\)$
+$$L=L_0\left(1-\frac{v^2}{c^2})\right$$
 
 and 
 
