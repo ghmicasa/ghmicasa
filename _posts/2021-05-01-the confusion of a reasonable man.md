@@ -1,5 +1,5 @@
 ---
-title: The confusion of a reasonable man
+title: The confusion of a reasonable man.
 description: The unthinkable impulsive actions have created confusions in the mind of a reasonable man. You see the idea of serene happiness and utopian love happens by chance. In spite of all the advances of civilization, there is a thing that hasn’t changed, women have remained as they were created. The behaviour you’ll experience is the diktat she follows from the organ which is responsible for all the impulsive actions she performs. Men are selfish, or evil, but even when they exhibit such behaviour, they follow principles, but women never follow anything except impulses.
 ---
 
