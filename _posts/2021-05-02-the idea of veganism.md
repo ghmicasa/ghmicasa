@@ -16,5 +16,5 @@ Another argument is about pleasure. Other food habits seek pleasure while they d
 
 There are more arguments and there are many more counterviews. To conclude, I feel every single food habit is unique in itself, and the idea is not to exploit nature. Whatever is taken, must be reproduced, sustenance and survival are the way forward, and like all other food habits, Veganism is a very nice philosophy as long as it doesn’t end up exploiting nature.
 
-<blockquote id="bq">Inspiration: Vegan debate I recently had in a spiritual group.</blockquote>
+<blockquote id="bqi">Inspiration: Vegan debate I recently had in a spiritual group.</blockquote>
 

@@ -16,5 +16,5 @@ A truthful character will find the comfort in another truthful character. A spir
 
 Find the character in book, in life that elevates your soul, and helps you in your journey of building a character, in book, in life.
 
-<blockquote id="bq">Inspiration: Real life and fictional novels. </blockquote>
+<blockquote id="bqi">Inspiration: Real life and fictional novels. </blockquote>
 

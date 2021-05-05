@@ -9,5 +9,5 @@ A man might find her actions hypocritical, or confusing, but you see, a woman ca
 
 These impulsive actions and transcendental characters cannot be questioned, but are to be accepted. If ever, out of curiosity or mistaken sense of reality, the man questions, she will leave the man with the sensation of being whipped by a successful rival in front of the woman he adored. You see the commodity called man has been traded for another one. 
 
-<blockquote id="bq">Inspiration: Venus in furs by Leopold von Sacher-Masoch</blockquote>
+<blockquote id="bqi">Inspiration: Venus in furs by Leopold von Sacher-Masoch</blockquote>
 
