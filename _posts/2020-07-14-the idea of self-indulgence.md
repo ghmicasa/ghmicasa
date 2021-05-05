@@ -13,5 +13,5 @@ There is nothing wrong in being self-indulgent as long as your self indulgence d
 
 Your have answered your own question. When you say, "Others action and words are troubling you," you are confirming what you are missing. Love for yourself. You are a caring person, and you care about actions and words of others, but in this process you forget you have to care about yourself too. If you have to ask, in my view, only two people have the right to say things and you should feel every word of it. Those two who brought you into this world. Keeping this in mind, you'll have to understand, it's your individual journey where you have to take care of yourself, and make yourself happy. Listen to your parents and rationalize it, because the world may not be same as they experienced. So, in this individual journey you have to find your own path, and discover yourself. Once you have made the discovery, you'll find yourself abundent with self-love, self-care, and self-indulgence, and ready to spread it to others.<br/>
 
-<blockquote id="bq">There is a world inside of me which wants to disintigrate. How do I integrate you all without disintegrating myself.</blockquote>
+<blockquote id="bq">Inspiration: Conversation with a stranger.</blockquote>
 

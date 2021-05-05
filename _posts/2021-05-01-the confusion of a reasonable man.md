@@ -8,3 +8,6 @@ The unthinkable impulsive actions have created confusions in the mind of a reaso
 A man might find her actions hypocritical, or confusing, but you see, a woman can be true to herself, but in the rarest of cases. It’s a matter of chance. You’ll either experience a virtuous Greek goddess Arete or a completely sensual Greek goddess Aphrodite. In either of the case, you’ll be overwhelmed by the beauty of a woman, but it’s a rarest of experience. In most of cases, she has a mixture of sensual and spiritual, her heart desires to enchain a man, while she wants freedom for herself. That’s a conflict, and that’s where lies and deception enters into her personality, and a transcendental character emerges.
 
 These impulsive actions and transcendental characters cannot be questioned, but are to be accepted. If ever, out of curiosity or mistaken sense of reality, the man questions, she will leave the man with the sensation of being whipped by a successful rival in front of the woman he adored. You see the commodity called man has been traded for another one. 
+
+<blockquote id="bq">Inspiration: Venus in furs by Leopold von Sacher-Masoch</blockquote>
+

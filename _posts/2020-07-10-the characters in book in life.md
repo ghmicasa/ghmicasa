@@ -15,3 +15,6 @@ Some characters will elevate, some will drag down, and it all depends on what ch
 A truthful character will find the comfort in another truthful character. A spiritual character fits well with another similar character, and two liars make a great companion.
 
 Find the character in book, in life that elevates your soul, and helps you in your journey of building a character, in book, in life.
+
+<blockquote id="bq">Inspiration: Real life and fictional novels. </blockquote>
+
