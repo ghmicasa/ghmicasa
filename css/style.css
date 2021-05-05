@@ -39,6 +39,7 @@ filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%);
 -ms-transition: all .3s ease;
 transition: all .3s ease;
 }
+
 .image-gallery a:hover img{-webkit-filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%); filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%);}
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background: none;}
@@ -78,10 +79,12 @@ pre code {white-space: pre;}
   }
 }
 
+/* Changing Keywords */
 .rs-changing-keywords {
   color: #1A4464 !important;
 }
 
+/* Blockquotes Styling */
 #bq {
   background: #f9f9f9;
   border-left: 10px solid #1A4464;
@@ -102,6 +105,7 @@ pre code {white-space: pre;}
   display: inline;
 }
 
+/* Blog content properties */
 #post-content-blog {
   font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -110,7 +114,7 @@ pre code {white-space: pre;}
     background-color: #fcfcfc;
 }
 
-
+/* Post Navigation */
 .post-navigation-bottom {
     display: flex;
     justify-content: space-between;
@@ -128,6 +132,7 @@ pre code {white-space: pre;}
     text-align: right;
 }
 
+/*toggle menu */
 #togglemenu {display: none; cursor: pointer;}
 @media (max-width: 1000px) {
     #togglemenu {display: block;}
@@ -141,6 +146,7 @@ pre code {white-space: pre;}
             width: 100% !important;
  }
 
+/*No Select Property */
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -151,7 +157,7 @@ pre code {white-space: pre;}
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-
+/* Spotify */
 .embed-spotify {
   position: relative;
   padding-bottom: 100%;
