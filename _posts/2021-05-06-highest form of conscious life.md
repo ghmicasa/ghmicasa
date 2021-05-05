@@ -1,10 +1,6 @@
 ---
 title: Plants are highest form of conscious life.
-description: Why plants are highest form of conscious life?
-
-In my earlier blog, I left this topic without discussing why I feel, plants are the highest form of conscious life, and left it to readers to contemplate. I hope some have given time to decode mysteries of this world beyond what is being told.
-
-Let me start from the perspective of a human mind, “These plants and trees are life forms existing here on this planet without any consciousness. There is fruit hanging there in the tree to provide us food, to not just satisfy our hunger, but to also give pleasure to our tongue. Yum yum.”
+description: Why plants are highest form of conscious life? In my earlier blog, I left this topic without discussing why I feel, plants are the highest form of conscious life, and left it to readers to contemplate. I hope some have given time to decode mysteries of this world beyond what is being told.Let me start from the perspective of a human mind, “These plants and trees are life forms existing here on this planet without any consciousness. There is fruit hanging there in the tree to provide us food, to not just satisfy our hunger, but to also give pleasure to our tongue. Yum yum.”
 ---
 
 Why plants are highest form of conscious life?
