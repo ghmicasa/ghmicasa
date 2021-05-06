@@ -1,5 +1,7 @@
 ---
 title: It's all about ludus love!
+description: If we keep it casual, we will save ourselves from wasted time, desire, and self-respect. We all claim we are looking for pragma love, but in reality what we are searching for is ludus love.
+date: "2020-05-26 04:00:00 +0530"
 ---
 
 If we keep it casual, we will save ourselves from wasted time, desire, and self-respect. 

@@ -1,6 +1,7 @@
 ---
 title: Action from the place of inspiration.
 description: Sometimes we judge ourselves too harshly because of the situation which didn’t fructify as we desired, and this leads to a series of questioning. The questioning without an end, going in circles, leading to nowhere. The nowhere barren land.
+date: "2020-05-25 04:00:00 +0530"
 ---
 
 Sometimes we judge ourselves too harshly because of the situation which didn’t fructify as we desired, and this leads to a series of questioning. The questioning without an end, going in circles, leading to nowhere. The nowhere barren land.

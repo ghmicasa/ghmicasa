@@ -1,5 +1,6 @@
 ---
 title: Characters, in book, in life.
+description: Characters. The most important aspect of any/every story. The main part of any storytelling. How gripping is a story depends on how a character is built. Once you have a character, the story just evolves and revolves around it. The more unique it is, the better the story. That’s the power of characters.
 date: "2020-07-10 04:00:00 +0530"
 ---
 

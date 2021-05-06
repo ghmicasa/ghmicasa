@@ -1,6 +1,7 @@
 ---
 title: Karma – Does it really work?
-description: For every action there is always a reaction. In my worst days, I am skeptical, and I question if karma really holds. I see injustice, and see people getting away with it. 
+description: For every action there is always a reaction. In my worst days, I am skeptical, and I question if karma really holds. I see injustice, and see people getting away with it.
+date: "2020-05-27 04:00:00 +0530" 
 ---
 
 For every action there is always a reaction. In my worst days, I am skeptical, and I question if karma really holds. I see injustice, and see people getting away with it. 

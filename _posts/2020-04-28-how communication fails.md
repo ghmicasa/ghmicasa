@@ -1,6 +1,7 @@
 ---
 title: How communication fails.
 description: During communication, either two people speak different languages and meanings are lost in translation, or two people communicate in the same language but meaning differs. Let me rephrase the question, “Is it possible to transfer true fragrance of thoughts from one individual to another?”
+date: "2020-04-28 04:00:00 +0530"
 ---
 
 During communication, either two people speak different languages and meanings are lost in translation, or two people communicate in the same language but meaning differs. Let me rephrase the question, “Is it possible to transfer true fragrance of thoughts from one individual to another?”

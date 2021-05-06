@@ -1,6 +1,7 @@
 ---
 title: What is Spirituality?
 description: What is spiritual? Is it the exclusivity of a place beyond this material world where all discontent soul want to fly someday? Or is it the experience of this life, in this material world, where every experience feeding to the soul is spiritual?
+date: "2020-06-13 04:00:00 +0530"
 ---
 
 What is spiritual? Is it the exclusivity of a place beyond this material world where all discontent soul want to fly someday? Or is it the experience of this life, in this material world, where every experience feeding to the soul is spiritual?

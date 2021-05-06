@@ -1,6 +1,7 @@
 ---
 title: Whirlpool of self-deception.
 description: We come across lot many situations which we don’t like, something which doesn’t feel good to an idea which makes us. The idea can be anything, personally, I don’t like duality. There is nothing wrong in duality as such, it’s just a personal choice. I may aspire to follow it someday, but as of now it doesn’t make much sense to me.
+date: "2020-06-14 04:00:00 +0530"
 ---
 We come across lot many situations which we don’t like, something which doesn’t feel good to an idea which makes us. The idea can be anything, personally, I don’t like duality. There is nothing wrong in duality as such, it’s just a personal choice. I may aspire to follow it someday, but as of now it doesn’t make much sense to me. 
 

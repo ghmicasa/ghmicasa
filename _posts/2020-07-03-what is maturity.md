@@ -1,5 +1,6 @@
 ---
 title: What is maturity?
+description: Is it a psychological process or a physical process? We call it psychological process, but is it truly just a psychological process? Is everything happening in our thoughts? How come everyone in a particular age group become mature, suddenly? 
 date: "2020-07-03 04:00:00 +0530"
 ---
 
