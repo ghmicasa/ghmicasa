@@ -1,6 +1,7 @@
 ---
 title: The idea of self-indulgence.
 description: Why some people are happy and some aren't. The answer is in self love, self care, and self indulgence. When you make your happiness circle around someone who doesn't care or something which isn't yours, you'll never be able to experience what you are suppose to experience, happiness. So, make your happiness revolve around yourself.
+date: "2020-07-14 04:00:00 +0530"
 ---
 
 Why some people are happy and some aren't. The answer is in self love, self care, and self indulgence. When you make your happiness circle around someone who doesn't care or something which isn't yours, you'll never be able to experience what you are suppose to experience, happiness. So, make your happiness revolve around yourself. You are the one you should look for, and nobody else. Enjoy life, experience beauty, and be self indulgent. When you have found yourself in the pool of happiness, then you are ready to give happiness to others in true sense.<br/>

@@ -1,5 +1,6 @@
 ---
 title: Scribbles from life - Transformation.
+date: "2020-06-27 04:00:00 +0530"
 ---
 
 In a solitary phase, the color of migratory locust is generally green, camouflaged to blend with the background, and they are normally less aggressive, but when they grow up in a crowded place, strange things happen, there is a mutation, it’s called swarming phase, they become darker, and more aggressive. In order to survive, when there is not enough food for all, they become destructive. 

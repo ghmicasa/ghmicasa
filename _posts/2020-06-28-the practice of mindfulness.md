@@ -1,5 +1,6 @@
 ---
 title: The practice of mindfulness.
+date: "2020-06-28 04:00:00 +0530"
 ---
 
 Thoughts are powerful. A thought of winning a race gives adrenaline rush, a physical process in the body. If these thoughts make way into the subconscious world from the conscious world, the body behaves accordingly. 

@@ -1,5 +1,6 @@
 ---
 title: Life and magic.
+date: "2020-06-29 04:00:00 +0530"
 ---
 
 We all love magic. Magic induces a sense of wonder. It detaches us from painful reality, and couples us with magical plane of hopes and happiness. It gives inner child a chance to escape from reality and lets its innocence dance to the tune of abracadabra. As the magician performs magic, his one hand is where magic is happening while the other one is busy performing tricks. If he is a good magician, he’ll never disappoint you, he’ll keep you busy on his magical hand. That’s where the magician art shines, keeping you in the wonderland.
