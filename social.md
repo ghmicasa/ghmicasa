@@ -8,6 +8,7 @@ description: Connect with me.
 
 {% include instagram.html username="roopesh.singh02" %}
 
+<br/>
 <hr size="3" width="100%" color="#C0392B">
 
 ### Music I love
