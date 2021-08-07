@@ -8,7 +8,7 @@ These terms and conditions shall apply when you fill out <a href="/contact">form
 
 1. This website does not automatically gather any personal information from you unless you provide it voluntarily through an e-mail, or through submitting an online form. Personal information (such as name, e-mail address, etc) are collected when you choose to fill out form or e-mail me directly.
 
-2. If you should choose to provide me with personal information-as in by an e-mail or by filling out a form, I will use that information to respond to your message (if I choose to do so), and to respond to the information you have requested. 
+2. If you should choose to provide me with personal information-as in by an e-mail or by filling out a form, I will use that information to respond to your message, and to respond to the information you have requested. 
 
 3. This website does not collect personal information for commercial marketing or distribution to any private organizations.
 
