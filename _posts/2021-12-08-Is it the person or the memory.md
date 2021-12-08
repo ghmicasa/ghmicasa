@@ -5,9 +5,11 @@ date: "2021-12-08 06:00:00 +0530"
 ---
 
 In all types of human relations that we create with an individual, are we interested in the person or the experience that shapes our memory? 
+
 To answer this, you’ll have to look into the evolution of human psychology. Everything that we experience are the direct consequence of the new information that our mind processes using the past knowledge/idea/or memory. These past memories/ideas/ or knowledges are also part of the same process. So, it’s fair to say, it’s a very dynamic process. 
 
 How do we feel? 
+
 Well, when the mind processes this ever-changing new information, either it aligns with the past information/idea/or knowledge or it collides with it. Depending upon the result, psychosomatic effects are felt between the mind and the body, especially the heart (an idea developed in literatures). So, our feelings and experiences are our memories.
 We do not love an individual, but rather our memories. If that hadn’t been the case, most of the humans would be living life without love. We fall in love multiple times, because we keep on making new memories. 
 
