@@ -12,5 +12,5 @@ I am passionate about new technologies and always learning. I love travelling to
 ### About this site
 
 I have created this website because my endless digital space needs a way to come together.
-I am creating a digital twin, where all the things that I have done, I am doing, and want to do can live and breath just like me.
+I am creating a digital twin, where all the things that I have done, I am doing, and want to do can live and breathe just like me.
 
