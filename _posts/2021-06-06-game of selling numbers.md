@@ -12,8 +12,8 @@ It all started with our discussion on how numbers, when the count increases, aff
 
 A few years back we saw a new entrant in mobile technology. This new company, relatively new to market, without much of user base had to compete with the older gaints. The new entrant came up with a genius idea of selling numbers rather than technology, and started marketing its product with numbers, and it all worked. Phones with multiple number of cameras, higher ram, higher screen resolution and what not. As these numbers were flashed onto the glittering eyes of humans, it exposed the deepest desires of them, their love for numbers. We saw everyone getting crazy, higher the better. As the numbers kept on increasing, our desire kept on expanding. 
 
-Few year later, everyone in the market was selling just numbers. Art lost its charm and now it's all about adjusting with numbers.
+Fast forward, few year later, everyone in the market is selling just numbers. The art lost its charm and now it's all about adjusting with numbers.
 
-Those days are gone when the technology was about bringing something new, the art and research of producing something beautiful. As of now, we'll have to adjust with numbers.
+Those days are gone when the technology was about bringing something new and innovative, the art and research of producing something beautiful. As of now, we'll have to adjust with numbers.
 
 The way everything is advertised, it’s so hilarious. Although, nothing wrong with it, that’s the way things work, and everyone fell for the genius idea of selling numbers.
