@@ -69,6 +69,6 @@ form_engines:
 comments:
   provider : "facebook"
   facebook:
-    appid : 235256871037541
+    appid : 
     num_posts : # 5 (default)
     colorscheme : # "light" (default), "dark"
