@@ -1,0 +1,21 @@
+{% include header.html %}
+<div class="col-md-8">
+		<article class="post page">
+        <header class="post-header">
+            {% include breadcrumbs.html %}
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header>
+        <div class="post-content noselect">
+            {{ content }}
+            <br/>
+            {% include share-buttons.html %}
+            <br/>
+            <!--<div class="rs_comment">
+            <h4>LEAVE A COMMENT</h4>
+                <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+            </div>-->
+            <p><br /><a href="/notes">&larr; Back</a></p>
+        </div>
+    </article>
+</div>
+{% include footer.html %}

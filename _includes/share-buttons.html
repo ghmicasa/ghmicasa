@@ -1,0 +1,41 @@
+{% if include.pageurl != nil and include.pageurl != '' %}
+    {% assign pageurl = include.pageurl %}
+{% else %}
+    {% assign pageurl = page.url %}
+{% endif %}
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+    position: relative;
+    text-align: left; 
+    height: 36px; 
+    width: 32px; 
+    float: left; 
+    text-align: center;
+}
+#share-buttons > div.facebook > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.telegram > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.whatsapp > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.twitter > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.linkedin > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.pinterest > i {height: 15px; margin-top: 6px;}
+#share-buttons > div.mail > i {height: 15px; margin-top: 6px;}
+</style>
+
+<span style="color: silver;">Share on: </span><div id="share-buttons">
+    <div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}');"><i class="fa fa-facebook" style="font-size:20px; color:#3b5998;"></i></div>
+
+    <div class="telegram" title="Share this on Telegram" onclick="window.open('http://telegram.me/share/url?url={{ site.url }}{{ pageurl }}');"><i class="fa fa-telegram" style="font-size:20px; color:#34ACE1;"></i></div>
+    
+    <div class="whatsapp" title="Share this on WhatsApp" data-action="share/whatsapp/share" onclick="window.open('whatsapp://send?text={{ site.url }}{{ pageurl }}');"><i class="fa fa-whatsapp" style="font-size:22px; color:#25d366"></i></div>
+
+    <div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status={{ site.url }}{{ pageurl }}');"><i class="fa fa-twitter" style="font-size:22px; color:#1da1f2;"></i></div>
+
+    <div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source=');"><i class="fa fa-linkedin" style="font-size:20px; color:#0077b5;"></i></div>
+
+    {% if page.image %}<div class="pinterest" title="Share this on Pinterest" onclick="window.open('https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{ page.image }}&description=');"><i class="fa fa-pinterest" style="font-size:22px; color:#CB2027"></i></div></div>{% endif %}
+
+    <div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body={{ site.url }}{{ pageurl }}');"><i class="fa fa-envelope" style="font-size:20px; color:#7D7D7D"></i></div>
+</div>

@@ -1,0 +1,20 @@
+---
+title: The idea of veganism.
+description: Searching on the internet about Veganism lead me to many definitions, and the philosophy behind Veganism. Gathering all these definitions, it seems the opinion that I have made is a simple one, veganism is just another type of food habit preferred by certain individuals. Veganism is a practice of abstaining from animal products, and rejecting commodity status of animals.
+date: "2021-05-02 04:00:00 +0530"
+---
+
+Searching on the internet about Veganism lead me to many definitions, and the philosophy behind it. Gathering all these definitions, it seems the opinion that I have made is a simple one, Veganism is just another type of food habit preferred by certain individuals. It is a practice of abstaining from animal products, and rejecting commodity status of the animals.
+
+In my search, I also came across many resources where philosophy is built with the idea of being moral. This sense of morality is based on the fact that there isn't any exploitation or cruelty done to animals. Many “Gurus” and articles have spoken and written about it extensively. It's all good until you have a conversation with the followers of this philosophy. It seems some exhibit tendency of being cruel to other forms of food habit. They are extremely aggressive to denounce other food habits. Ironically, one of the benefits of Veganism, as being philosophised, is not having the feeling of aggression.
+The idea behind writing this piece is to provide a viewpoint which might broaden the horizon of this discussion.
+
+Let me begin with morality. Morality is not absolute, but is a very dynamic aspect of society. Yes, there is a cruelty when animals become part of the food chain, but that’s how nature has built this world. Plants are also life forms, the only problem is when they are being used for food, being cut down, they don’t have a facial expression to show fear or tears. Every single life form existing on this planet wants to survive. The idea is not to exploit, but cruelty is inevitable in this schema of things.
+
+There is another argument where some individuals have talked about avoiding eating higher form of conscious life because it can interfere with human systems. This argument basically denounces consciousness of plants. Plants, in my view, are the most conscious species of this planet. If we look it from the perspective of nature, it will all become clear why I say <a href="https://roopesh-singh.com/blog/highest-form-of-conscious-life/">plants are the highest form of conscious life</a>.
+
+Another argument is about pleasure. Other food habits seek pleasure while they don’t. That’s again a very narrow view of this world. Every single life is slave to its tongue, again this is how nature has built this world. Why do you seek a taste of salt or sugar in food? Are you not salve to your tongue?
+
+There are more arguments and there are many more counterviews. To conclude, I feel every single food habit is unique in itself, and the idea is not to exploit nature. Whatever is taken, must be reproduced, sustenance and survival are the way forward, and like all other food habits, Veganism is a very nice philosophy as long as it doesn’t end up exploiting nature.
+
+

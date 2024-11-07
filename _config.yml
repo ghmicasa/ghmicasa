@@ -1,0 +1,74 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Roopesh Singh | Webpages
+description: I have created this site because my endless digital space needs a way to come together. I am creating a digital twin of me, where all the things that I have done, am doing, and want to do can live and breath just like me.
+
+url: "https://roopesh-singh.com" # the base hostname & protocol 
+permalink: /blog/:title/
+
+# social button url
+facebook_url: 
+twitter_url: https://twitter.com/roopesh_singh02
+linkedin_url:
+googleplus_url: 
+pinterest_url: 
+instagram_url: https://www.instagram.com/roopeshsingh02/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "notes" # a collection in your site, in plural form
+    values:
+      layout: "notes-item"
+
+
+# Collections
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+# input methods
+input_types:
+  - text
+  - textarea
+  - email
+  - date
+  - checkbox
+  - radio
+  - number
+  - submit
+
+# Form Types
+form_engines:
+  - cloudcannon
+  - formspree
+  - formbucket
+
+# Facebook comment
+comments:
+  provider : "facebook"
+  facebook:
+    appid : 235256871037541
+    num_posts : # 5 (default)
+    colorscheme : # "light" (default), "dark"

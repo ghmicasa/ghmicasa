@@ -1,0 +1,30 @@
+---
+title: Blog
+layout: page
+description: These are my thoughts and take on various ideas and issues. This page contains list of all blogs. Checkout my notes also.
+---
+
+<h4>This page contains list of all the blogs. If you are unable to locate any page, use site search tool <a style="color:#C0392B" href="/search">here</a>.</h4><br/>
+
+
+{% for post in site.posts  %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+    <ul>
+    {% endif %}
+
+    <li>{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}">{{ post.title }}</a><br /></a></li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
+        <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}

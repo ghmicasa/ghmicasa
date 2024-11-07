@@ -1,0 +1,20 @@
+<!--Collapse Click-->
+<script type="text/javascript">
+	$(function() {
+  $('#ChangeToggle').click(function() {
+    $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden');  
+  });
+});
+</script>
+<!--Anywhere Collapse-->
+<script>
+	$(document).on("click", function(event){
+        var $trigger = $(".navbar");
+        if($trigger !== event.target && !$trigger.has(event.target).length){
+            $('.collapse').collapse('hide');
+        $('#navbar-close').addClass('hidden');
+        $('#navbar-hamburger').removeClass('hidden');
+        }            
+    });
+</script>
