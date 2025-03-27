@@ -24,4 +24,4 @@ Remember, this process takes time and patience. Start with 15-20 minutes a day a
 
 If you have noticed, I haven’t tried the method of removing thoughts; rather, I have used thoughts as a medium to attain a deep state of focus. Maybe you’ll find the other process more comfortable, but this one, I found to be more in sync with me. If you also have an octopus that keeps floating around, give this method a try. There will come a time when this same octopus will be your companion, along with which you’ll enjoy the mighty boundless ocean.
 
-¹ Anahat Naad, also known as the "unstruck sound," is a concept in yogic and spiritual traditions. It refers to the subtle, internal sound that is believed to resonate within all beings and the universe. It's often described as a continuous, vibrational sound that can be perceived in deep states of meditation.
+¹ Anahat Naad, also known as the "unstruck sound," is the subtle, internal sound that resonate within all beings and the universe.
