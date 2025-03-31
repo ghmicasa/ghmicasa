@@ -29,9 +29,10 @@ defaults:
     values:
       layout: "post"
   - scope:
+      path: ""
       type: "notes" #  collection
     values:
-      layout: "note" #  singular form, more consistent
+      layout: "note-item" #  singular form, more consistent
 
 
 # Collections -  defined at the top level
