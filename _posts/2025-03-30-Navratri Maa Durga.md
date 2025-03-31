@@ -1,5 +1,5 @@
 ---
-title: Navratri.
+title: Navratri Festival.
 accordion: 
   - title: Day 1 - Devoted to Maa Shailputri
     content:  Maa Shailputri is the first form of Goddess Durga and is worshipped on the first day. Her name literally means "daughter of the mountain." Often, the name and the artistic depictions embody the essence associated with these energies. Being a daughter of the mountain, what does it symbolize? <br/>Mountains, metaphorically, can have many meanings in the spiritual realm. They represent aesthetic meanings of stability, such as symmetry, reliability, balance, strength, resilience, endurance, etc. This symbolism, for the disciple, hints towards the idea that is to be observed. 

@@ -1,5 +1,5 @@
 ---
-title: Action from the place of inspiration.
+title: Inspiration Vs Judgement.
 description: Sometimes we judge ourselves too harshly because of the situation which didn’t come to fruition as we desired, and this leads us to a maze with no exit. The endless questioning and answering, going in circles, leads us to a nowhere land. The nowhere barren land.
 date: "2020-05-25 04:00:00 +0530"
 ---
