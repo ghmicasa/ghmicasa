@@ -1,7 +1,6 @@
 # Site settings
 title: Roopesh Singh | Webpages
-description: >-
-  My digital space, a collection of my past, present, and future endeavors.
+description: My digital space, a collection of my past, present, and future endeavors.
   This site serves as a platform to document and share my work,
   interests, and experiences.
 url: "https://roopesh-singh.com" # the base hostname & protocol
@@ -15,16 +14,18 @@ author:
   linkedin:
   googleplus:
   pinterest:
-  instagram: https://www.instagram.com/roopeshsingh02/
+  instagram:
 
 
 # Defaults - More explicit and organized
 defaults:
   - scope:
+      path: ""
       type: "pages"
     values:
       layout: "page"
   - scope:
+      path: ""
       type: "posts"
     values:
       layout: "post"
