@@ -1,15 +1,25 @@
-<!-- Changing keyword script -->
 <script>
-    (function(){
-        document.addEventListener('DOMContentLoaded', function(){
-            var children = document.getElementsByClassName('rs-changing-keywords')[0].children;
-            var length = children.length;
-            var idx = 0;
-            setInterval(function(){
-                children[idx].className = "hidden";
-                idx = (idx + 1) % length;
-                children[idx].className = "visible";
-            }, 2000);
-        });
-    })();
+document.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.rs-changing-keywords');
+  if (!container) return;
+
+  const keywords = Array.from(container.children);
+  let currentIndex = 0;
+  const intervalTime = 2000;
+
+  keywords.forEach((keyword, index) => {
+    keyword.classList.toggle('visible', index === 0);
+    keyword.classList.toggle('hidden', index !== 0);
+  });
+
+  setInterval(() => {
+    keywords[currentIndex].classList.remove('visible');
+    keywords[currentIndex].classList.add('hidden');
+
+    currentIndex = (currentIndex + 1) % keywords.length;
+
+    keywords[currentIndex].classList.remove('hidden');
+    keywords[currentIndex].classList.add('visible');
+  }, intervalTime);
+});
 </script>

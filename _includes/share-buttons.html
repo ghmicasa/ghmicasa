@@ -1,41 +1,85 @@
 {% if include.pageurl != nil and include.pageurl != '' %}
-    {% assign pageurl = include.pageurl %}
+  {% assign pageurl = include.pageurl | url_encode %}
 {% else %}
-    {% assign pageurl = page.url %}
+  {% assign pageurl = page.url | url_encode %}
 {% endif %}
 
 <style>
-#share-buttons {display: inline-block; vertical-align: middle; }
-#share-buttons:after {content: ""; display: block; clear: both;}
-#share-buttons > div {
-    position: relative;
-    text-align: left; 
-    height: 36px; 
-    width: 32px; 
-    float: left; 
-    text-align: center;
-}
-#share-buttons > div.facebook > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.telegram > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.whatsapp > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.twitter > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.linkedin > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.pinterest > i {height: 15px; margin-top: 6px;}
-#share-buttons > div.mail > i {height: 15px; margin-top: 6px;}
+  :root {
+    --share-button-size: 36px;
+    --share-icon-size: 20px;
+    --share-icon-margin: 6px;
+  }
+
+  #share-buttons {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+
+  #share-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: var(--share-button-size);
+    height: var(--share-button-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    padding: 0;
+  }
+
+  #share-buttons button i {
+    font-size: var(--share-icon-size);
+  }
+
+  .facebook { color: #3b5998; }
+  .telegram { color: #34ACE1; }
+  .whatsapp { color: #25d366; font-size: 22px; }
+  .twitter { color: #1da1f2; font-size: 22px; }
+  .linkedin { color: #0077b5; }
+  .pinterest { color: #CB2027; font-size: 22px; }
+  .mail { color: #7D7D7D; }
+
+  #share-buttons span {
+    margin-right: 10px;
+  }
 </style>
 
-<span style="color: silver;">Share on: </span><div id="share-buttons">
-    <div class="facebook" title="Share this on Facebook" onclick="window.open('http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}');"><i class="fa fa-facebook" style="font-size:20px; color:#3b5998;"></i></div>
-
-    <div class="telegram" title="Share this on Telegram" onclick="window.open('http://telegram.me/share/url?url={{ site.url }}{{ pageurl }}');"><i class="fa fa-telegram" style="font-size:20px; color:#34ACE1;"></i></div>
-    
-    <div class="whatsapp" title="Share this on WhatsApp" data-action="share/whatsapp/share" onclick="window.open('whatsapp://send?text={{ site.url }}{{ pageurl }}');"><i class="fa fa-whatsapp" style="font-size:22px; color:#25d366"></i></div>
-
-    <div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/home?status={{ site.url }}{{ pageurl }}');"><i class="fa fa-twitter" style="font-size:22px; color:#1da1f2;"></i></div>
-
-    <div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ pageurl }}&title=&summary=&source=');"><i class="fa fa-linkedin" style="font-size:20px; color:#0077b5;"></i></div>
-
-    {% if page.image %}<div class="pinterest" title="Share this on Pinterest" onclick="window.open('https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{ page.image }}&description=');"><i class="fa fa-pinterest" style="font-size:22px; color:#CB2027"></i></div></div>{% endif %}
-
-    <div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body={{ site.url }}{{ pageurl }}');"><i class="fa fa-envelope" style="font-size:20px; color:#7D7D7D"></i></div>
+<div id="share-buttons">
+  <span style="color: silver;">Share on: </span>
+  <button class="facebook" aria-label="Share on Facebook" data-url="http://www.facebook.com/share.php?u={{ site.url }}{{ pageurl }}">
+    <i class="fa fa-facebook"></i>
+  </button>
+  <button class="telegram" aria-label="Share on Telegram" data-url="http://telegram.me/share/url?url={{ site.url }}{{ pageurl }}">
+    <i class="fa fa-telegram"></i>
+  </button>
+  <button class="whatsapp" aria-label="Share on WhatsApp" data-url="whatsapp://send?text={{ site.url }}{{ pageurl }}">
+    <i class="fa fa-whatsapp"></i>
+  </button>
+  <button class="twitter" aria-label="Share on Twitter" data-url="http://twitter.com/home?status={{ site.url }}{{ pageurl }}">
+    <i class="fa fa-twitter"></i>
+  </button>
+  {% if page.image %}
+    <button class="pinterest" aria-label="Share on Pinterest" data-url="https://pinterest.com/pin/create/button/?url=&media={{ site.url }}{{ page.image | url_encode }}&description=">
+      <i class="fa fa-pinterest"></i>
+    </button>
+  {% endif %}
+  <button class="mail" aria-label="Share via Email" data-url="mailto:?&body={{ site.url }}{{ pageurl }}">
+    <i class="fa fa-envelope"></i>
+  </button>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const shareButtons = document.querySelectorAll('#share-buttons button');
+    shareButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const url = button.getAttribute('data-url');
+        if (url) {
+          window.open(url);
+        }
+      });
+    });
+  });
+</script>

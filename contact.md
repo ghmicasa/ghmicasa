@@ -39,14 +39,8 @@ description: Feel free to leave me a (nice) message. Connect with me, and share 
 ---
 
 ### Feel free to leave me a (nice) message. Have a nice day!
-Please read <a href="/terms">terms and conditions</a> before for filling out this form, or sending an e-mail.
+Please read <a href="/terms">terms and conditions</a> before for filling out this form.
 
 ### Contact form
 <br/>
 {% include form.html %}
-
-<!--
-### Contact e-mail
-<br/>
-You can contact me through e-mail at <a href="mailto:contact@roopesh-singh.com">contact@roopesh-singh.com</a>.
--->

@@ -1,76 +1,159 @@
 <style>
-#mobile-menu {overflow: hidden;}
-#mobile-menu ul {font-size: 0;}
-#mobile-menu li {font-size: 13px; display: inline-block; float: none; vertical-align: top;}
+  :root {
+    --menu-color: {{ include.color | default: '#333' }}; /* Default color if not provided */
+    --menu-transition: 0.15s ease-in-out;
+    --menu-icon-width: 15px;
+    --menu-icon-height: 2px;
+  }
 
-#mobile-menu-toggler {display: none; float: right; text-decoration: none; cursor: pointer; font-size: 12px; font-weight: bold; color: {{ include.color }}!important;}
-#mobile-menu-toggler span.mobile-menu-icon::before, #mobile-menu-toggler span.mobile-menu-icon::after, #mobile-menu-toggler span.mobile-menu-icon {display: inline-block; width: 15px; height: 2px; background: {{ include.color }}!important;}
-#mobile-menu #mobile-menu-toggler span.mobile-menu-icon,
-#mobile-menu #mobile-menu-toggler span.mobile-menu-icon::before, 
-#mobile-menu #mobile-menu-toggler span.mobile-menu-icon::after {
-  -webkit-transition: all 0.15s ease-in-out!important;
-  -moz-transition: all 0.15s ease-in-out!important;
-  -o-transition: all 0.15s ease-in-out!important;
-  transition: all 0.15s ease-in-out!important;
-}
-#mobile-menu-toggler span.mobile-menu-icon {margin-left: 5px; position: relative; bottom: 4px;}
-#mobile-menu-toggler span.mobile-menu-icon::before, #mobile-menu-toggler span.mobile-menu-icon::after {content: ""; vertical-align: middle; position: absolute;}
-#mobile-menu-toggler span.mobile-menu-icon::before {margin-top: -4px;}
-#mobile-menu-toggler span.mobile-menu-icon::after {margin-top: 4px;}
+  #mobile-menu {
+    overflow: hidden;
+  }
 
-#mobile-menu.open #mobile-menu-toggler span.mobile-menu-icon {background: transparent!important;}
-#mobile-menu.open #mobile-menu-toggler span.mobile-menu-icon::before {margin-top: 0px;}
-#mobile-menu.open #mobile-menu-toggler span.mobile-menu-icon::after {margin-top: 0px;}
-#mobile-menu.open #mobile-menu-toggler span.mobile-menu-icon::before {
--webkit-transform-origin: 50% 50%;
--moz-transform-origin: 50% 50%;
--o-transform-origin: 50% 50%;
-transform-origin: 50% 50%;
--webkit-transform: rotate(45deg);
--moz-transform: rotate(45deg);
--ms-transform: rotate(45deg);
--o-transform: rotate(45deg);
-}
-#mobile-menu.open #mobile-menu-toggler span.mobile-menu-icon::after {
--webkit-transform-origin: 50% 50%;
--moz-transform-origin: 50% 50%;
--o-transform-origin: 50% 50%;
-transform-origin: 50% 50%;
--webkit-transform: rotate(-45deg);
--moz-transform: rotate(-45deg);
--ms-transform: rotate(-45deg);
--o-transform: rotate(-45deg);
-}
-#mobile-menu span.mobile-menu-text.open {display: none;}
-#mobile-menu.open span.mobile-menu-text {display: none;}
-#mobile-menu.open span.mobile-menu-text.open {display: initial;}
+  #mobile-menu ul {
+    font-size: 13px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-.navbar-header {float: left!important;}
+  #mobile-menu li {
+    display: block;
+  }
 
-@media screen and (max-width: {{ include.width }}px) {
-        #mobile-menu-toggler {display: block;}
-        #mobile-menu ul {clear: left; display: none;}
-        #mobile-menu.open ul {display: block;}
-        #mobile-menu li {display: block;}
-}
+  #mobile-menu-toggler {
+    display: none;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--menu-color);
+    line-height: 1;
+  }
+
+  .mobile-menu-icon,
+  .mobile-menu-icon::before,
+  .mobile-menu-icon::after {
+    display: inline-block;
+    width: var(--menu-icon-width);
+    height: var(--menu-icon-height);
+    background: var(--menu-color);
+    transition: transform var(--menu-transition), background-color var(--menu-transition);
+  }
+
+  .mobile-menu-icon {
+    margin-left: 5px;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .mobile-menu-icon::before,
+  .mobile-menu-icon::after {
+    content: "";
+    position: absolute;
+  }
+
+  .mobile-menu-icon::before {
+    top: -4px;
+  }
+
+  .mobile-menu-icon::after {
+    top: 4px;
+  }
+
+  #mobile-menu.open .mobile-menu-icon {
+    background: transparent;
+  }
+
+  #mobile-menu.open .mobile-menu-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  #mobile-menu.open .mobile-menu-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .mobile-menu-text.open {
+    display: none;
+  }
+
+  #mobile-menu.open .mobile-menu-text {
+    display: none;
+  }
+
+  #mobile-menu.open .mobile-menu-text.open {
+    display: inline;
+  }
+
+  .navbar-header {
+    float: left !important;
+  }
+
+  @media screen and (max-width: {{ include.width | default: '768' }}px) {
+    #mobile-menu-toggler {
+      display: block;
+    }
+
+    #mobile-menu ul {
+      display: none;
+      clear: left;
+    }
+
+    #mobile-menu.open ul {
+      display: block;
+    }
+  }
 </style>
 
 <script>
-    function mobilemenutoggle() {
-        $("#mobile-menu").toggleClass('open');
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenu = document.getElementById('mobile-menu');
+    let toggler = document.getElementById('mobile-menu-toggler');
+
+    function mobileMenuToggle() {
+      mobileMenu.classList.toggle('open');
     }
-    $( window ).resize(function() {
-        $('#mobile-menu ul').hide();
-        if($( window ).width() < {{ include.width }} ) {
-            //show toggler if not exists
-            if(!($("#mobile-menu-toggler").length>0)) {
-                var mobilemenuheight = $('#mobile-menu').height();
-                var toggler = "<a id='mobile-menu-toggler' onclick='mobilemenutoggle();' style='height: "+mobilemenuheight+"px; line-height: "+(mobilemenuheight-1)+"px;'><span class='mobile-menu-text open'></span><span class='mobile-menu-text'>MENU</span><span class='mobile-menu-icon'></span></a>";
-                $( "#mobile-menu" ).prepend( toggler );
-            }
-        }
-        $('#mobile-menu ul').attr('style', '')
-        //console.log($('#mobile-menu').css('font-size'));
-    });
-    $( window ).resize();
+
+    function createToggler() {
+      if (!toggler) {
+        const height = mobileMenu.offsetHeight;
+        toggler = document.createElement('a');
+        toggler.id = 'mobile-menu-toggler';
+        toggler.innerHTML = '<span class="mobile-menu-text open"></span><span class="mobile-menu-text">MENU</span><span class="mobile-menu-icon"></span>';
+        toggler.style.height = `${height}px`;
+        toggler.style.lineHeight = `${height - 1}px`;
+        toggler.addEventListener('click', mobileMenuToggle);
+        mobileMenu.prepend(toggler);
+      }
+    }
+
+    function handleResize() {
+      mobileMenu.classList.remove('open');
+      if (window.innerWidth < {{ include.width | default: '768' }}) {
+        createToggler();
+      } else if (toggler) {
+        toggler.remove();
+        toggler = null;
+      }
+    }
+
+    // Debounce function
+    function debounce(func, delay) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          timeout = null;
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, delay);
+      };
+    }
+
+    window.addEventListener('resize', debounce(handleResize, 100));
+    handleResize(); // Initial call
+  });
 </script>

@@ -1,66 +1,155 @@
 <style>
-#install-to-homescreen {padding: 7px 15px; display: none; text-align: center; position: fixed; bottom: 0px; left: 0px; width: 100%; background: #222; color: rgba(255,255,255,0.8); z-index: 99999;}
-#install-to-homescreen a {cursor: pointer; margin-left: 10px;}
-#install-to-homescreen img {display: inline-block; height: 15px; margin: 0 2px; position: relative;}
-#install-to-homescreen img.share_img {height: 18px; bottom: 1px;}
-@media (max-width: 1000px) {
-    #install-to-homescreen span {display: block; padding-top: 3px; margin-bottom: 13px;}
-    #install-to-homescreen a {position: relative; bottom: 4px;}
-}
-@media (max-width: 400px) {
-    #install-to-homescreen br {display: none;}
-}
+  #install-to-homescreen {
+    padding: 10px 15px;
+    display: none;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 99999;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #install-to-homescreen a {
+    cursor: pointer;
+    margin-left: 0;
+    color: #fff;
+    background-color: #007bff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  #install-to-homescreen a:hover {
+    background-color: #0056b3;
+  }
+
+  #install-to-homescreen img {
+    display: inline-block;
+    height: 16px;
+    margin: 0 2px;
+    vertical-align: middle;
+  }
+
+  #install-to-homescreen img.share_img {
+    height: 19px;
+  }
+
+  #install-to-homescreen span {
+    display: block;
+  }
+
+  @media (max-width: 1000px) {
+    #install-to-homescreen {
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    #install-to-homescreen span {
+      padding-bottom: 10px;
+      margin-bottom: 0;
+    }
+
+    #install-to-homescreen a {
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #install-to-homescreen br {
+      display: none;
+    }
+  }
 </style>
 
 <script>
-var iOS = /^(iPhone|iPad|iPod)/.test(navigator.platform);
-var safari = (navigator.vendor != null && navigator.vendor.match(/Apple Computer, Inc./) && navigator.userAgent.indexOf('Safari') != -1);
+  const iOS = /^(iPhone|iPad|iPod)/.test(navigator.platform);
+  const safari =
+    navigator.vendor != null &&
+    navigator.vendor.match(/Apple Computer, Inc./) &&
+    navigator.userAgent.indexOf('Safari') != -1;
+  const android = /android/i.test(navigator.userAgent); //detect android
 
-    function getParameterByName(name) {
-        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-        return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-    }
+  function getParameterByName(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+  }
 
-    function createCookie(name,value,days) {
-        var expires = "";
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime() + (days*24*60*60*1000));
-            expires = "; expires=" + date.toUTCString();
-        }
-        document.cookie = name + "=" + value + expires + "; path=/";
+  function createCookie(name, value, days) {
+    let expires = '';
+    if (days) {
+      const date = new Date();
+      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+      expires = '; expires=' + date.toUTCString();
     }
-    function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for(var i=0;i < ca.length;i++) {
-            var c = ca[i];
-            while (c.charAt(0)==' ') c = c.substring(1,c.length);
-            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-        }
-        return null;
-    }
-    function eraseCookie(name) {
-        createCookie(name,"",-1);
-    }
+    document.cookie = name + '=' + value + expires + '; path=/';
+  }
 
+  function readCookie(name) {
+    const nameEQ = name + '=';
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+      if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+  }
+
+  function eraseCookie(name) {
+    createCookie(name, '', -1);
+  }
+
+  $(document).ready(() => {
     if (iOS) {
-        if (window.navigator.standalone) {
-            $('a').each( function() {
-                if($(this).attr('href')) $(this).attr('href',$(this).attr('href') + '?install-to-homescreen-dismissed=true');
-            });
-        }
-        //dismiss forever
-        if (getParameterByName('install-to-homescreen-dismissed')=='true') createCookie('install-to-homescreen-dismissed','true',9999);
+      if (window.navigator.standalone) {
+        $('a').each(function () {
+          if ($(this).attr('href'))
+            $(this).attr(
+              'href',
+              $(this).attr('href') + '?install-to-homescreen-dismissed=true'
+            );
+        });
+      }
+      // Dismiss forever
+      if (getParameterByName('install-to-homescreen-dismissed') === 'true')
+        createCookie('install-to-homescreen-dismissed', 'true', 9999);
     }
-    if(readCookie('install-to-homescreen-dismissed')=='true') {
-        //do nothing... message dismissed... nag again after the set period
+    if (readCookie('install-to-homescreen-dismissed') === 'true') {
+      // Do nothing... message dismissed
     } else {
-        if(iOS && safari) {
-            $('body').append("<div id='install-to-homescreen'><span>We would love you to install this website as a mobile app. <br />Find the share button in your browser (<img src=\"/img/share.svg\" class=\"share_img\" />) and select the plus (<img src=\"/img/addtohomescreen.svg\" class=\"addtohomescreen_img\" />) to install.</span><a id='dismiss-install-to-homescreen' class='btn btn-primary btn-sm' onclick=\"createCookie('install-to-homescreen-dismissed','true',1); $('#install-to-homescreen').hide();\">Dismiss</a></div>");
-            $('#install-to-homescreen').show();
-        }
-    }
+      let message = '';
+      let dismissButton =
+        '<a id="dismiss-install-to-homescreen" href="#" class="btn btn-primary btn-sm">Dismiss</a>';
 
+      if (iOS && safari) {
+        message =
+          'To install this website as a mobile app: Tap the Share button (<img src="/img/share.svg" class="share_img" />), then Add to Home Screen (<img src="/img/addtohomescreen.svg" class="addtohomescreen_img" />).';
+      } else if (android) {
+        message =
+          'To install this website as a mobile app: Tap the menu icon (usually three dots) and select "Add to Home screen".';
+      }
+
+      if (iOS && safari || android) { //show prompt for android too
+        $('body').append(
+          `<div id="install-to-homescreen"><span>${message}</span>${dismissButton}</div>`
+        );
+        $('#install-to-homescreen').show();
+
+        $('#dismiss-install-to-homescreen').on('click', (e) => {
+          e.preventDefault();
+          createCookie('install-to-homescreen-dismissed', 'true', 9999);
+          $('#install-to-homescreen').hide();
+        });
+      }
+    }
     $('head').append('<meta name="apple-mobile-web-app-capable" content="yes" />');
+  });
 </script>

@@ -1,21 +1,33 @@
 {% include header.html %}
 <div class="col-md-8">
-		<article class="post page">
-        <header class="post-header">
-            {% include breadcrumbs.html %}
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
-        <div class="post-content noselect">
-            {{ content }}
-            <br/>
-            {% include share-buttons.html %}
-            <br/>
-            <!--<div class="rs_comment">
-            <h4>LEAVE A COMMENT</h4>
-                <div class="fb-comments" data-href="{{ site.url }}{{ page.url }}" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
-            </div>-->
-            <p><br /><a href="/notes">&larr; Back</a></p>
-        </div>
-    </article>
+  <article class="post page">
+    <header class="post-header">
+      {% include breadcrumbs.html %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+    <div class="post-content noselect">
+      {{ content }}
+      <div class="share-buttons-container">
+        {% include share-buttons.html %}
+      </div>
+      <a href="/notes" aria-label="Back to notes" class="back-link">
+        &larr; Back
+      </a>
+    </div>
+  </article>
 </div>
 {% include footer.html %}
+
+<style>
+.share-buttons-container {
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.back-link {
+    margin-top: 20px; /* Adjust as needed */
+    display: block; /* Ensure the link is on its own line */
+}
+
+/* Add any other necessary styles for spacing */
+</style>

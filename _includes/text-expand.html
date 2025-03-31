@@ -1,16 +1,51 @@
+<style>
+.expand {
+    display: none;
+    height: 0;
+    overflow: hidden;
+}
+
+.read-more-link {
+    cursor: pointer;
+}
+
+.read-more-container {
+    display: inline;
+}
+
+</style>
+
 <script>
-    
-    var elements = document.querySelectorAll('p');
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.innerHTML=='[expand]') {
-            var parentcontent = el.parentNode.innerHTML.replace('<p>[expand]</p>','<div class="expand" style="display: none; height: 0; overflow: hidden;">').replace('<p>[/expand]</p>','</div>');
-            el.parentNode.innerHTML = parentcontent;
-        }
-    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const expandTags = document.querySelectorAll('p');
 
-    var elements = document.querySelectorAll('div.expand');
-    Array.prototype.forEach.call(elements, function(el, i){
-        el.previousElementSibling.innerHTML = el.previousElementSibling.innerHTML + '<span>..&nbsp; <a href="#" style="cursor: pointer;" onclick="this.parentNode.parentNode.nextElementSibling.style.display = \'block\'; this.parentNode.parentNode.nextElementSibling.style.height = \'auto\'; this.parentNode.style.display = \'none\';">read&nbsp;more&nbsp;&rarr;</a></span>';
-    });
+        expandTags.forEach((p) => {
+            if (p.innerHTML === '[expand]') {
+                const parentContent = p.parentNode.innerHTML
+                    .replace('<p>[expand]</p>', '<div class="expand">')
+                    .replace('<p>[/expand]</p>', '</div>');
+                p.parentNode.innerHTML = parentContent;
+            }
+        });
 
+        const expandDivs = document.querySelectorAll('div.expand');
+
+        expandDivs.forEach((div) => {
+            const previousParagraph = div.previousElementSibling;
+            if (previousParagraph) {
+                previousParagraph.innerHTML += `<span class="read-more-container">... <a href="#" aria-expanded="false" class="read-more-link">read more &rarr;</a></span>`;
+
+                const readMoreLink = previousParagraph.querySelector('.read-more-link');
+                if(readMoreLink){
+                  readMoreLink.addEventListener('click', (event) => {
+                      event.preventDefault();
+                      div.style.display = 'block';
+                      div.style.height = 'auto';
+                      previousParagraph.querySelector('.read-more-container').style.display = 'none';
+                      readMoreLink.setAttribute('aria-expanded', 'true');
+                  });
+                }
+            }
+        });
+    });
 </script>

@@ -1,17 +1,38 @@
 ---
 title: Social
-description: Connect with me.
+description: Connect with me and explore my music taste.
 ---
 
-### Captured moments
-<br/>
+<section class="social-page">
+  <div class="music-section">
+    <h3>Music</h3>
+    <p>
+      Dive into my favorite tunes and discover the sounds that inspire me. Check out my handpicked Spotify playlist below.
+    </p>
+    {% include spotifyplaylist.html %}
+  </div>
 
-{% include instagram.html username="roopesh.singh02" %}
+  <div class="personal-note">
+    <p>
+     I also enjoy reading. Feel free to explore my blog for my thoughts.
+    </p>
+  </div>
+  {% include share-buttons.html %}
+</section>
 
-<br/>
-<hr size="3" width="100%" color="#C0392B">
+<style>
+  .social-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2px; /* reduced padding */
+  }
 
-### Music I love
-<br/>
+  .music-section,
+  .personal-note {
+    margin-bottom: 2px; /* reduced margin */
+  }
 
-{% include spotifyplaylist.html %}
+  .personal-note p {
+    margin-top: 10px; /* reduced margin */
+  }
+</style>

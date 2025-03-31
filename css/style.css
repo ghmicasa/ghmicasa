@@ -1,200 +1,339 @@
-
-html {overflow-y: scroll;}
-body {background: #0D2436;}
-.download {float: right; margin-top: 5px;}
-.site-footer {background: #0D2436; min-height: 100px; padding: 20px 0;}
-
-.main {background: #fcfcfc; background-attachment: fixed; padding: 60px 0 80px; position: relative;}
-h1 {font-size: 33px; margin-top: 0; padding-top: 50px;}
-.post-header h1 {padding-top: 0;}
-.post-header {padding-top: 50px;}
-h2 {font-size: 25px; margin-top: 0; padding-top: 50px;}
-h3 {font-size: 17px; margin: 0; padding: 20px 0 3px;}
-h4 {font-size: 15px; margin: 0; padding: 20px 0 3px;}
-
-h3.post-meta {padding: 0;}
-.navbar-brand>img {
-    display: inline;
-    position: relative;
-    vertical-align: top;
-    bottom: 7px;
+/* Base Styles and Layout */
+html {
+  overflow-y: scroll; /* Ensures scrollbar is always visible */
 }
 
-article.page {padding-top: 0px;}
-img {display: block; max-width: 100%;}
-img.poweredby {cursor: pointer; display: inline-block; height: 100px; margin-right: 10px; margin-left: -8px; opacity: 0.35;}
-.site-footer a {color: #777777;}
-.site-footer h3 {color: silver;}
-#breadcrumbs, #breadcrumbs a {color: silver;}
-ul, ol {margin-bottom: 18px;}
-pre, p {margin: 0 0 18px;}
-.navbar-default {border-color: #e5e5e5;}
-.form-control {height: 37px;}
-
-/* Image gallery */
-.image-gallery a img{
--webkit-filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%);
-filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%);
--webkit-transition: all .3s ease;
--moz-transition: all .3s ease;
--o-transition: all .3s ease;
--ms-transition: all .3s ease;
-transition: all .3s ease;
+body {
+  background: #0d2436; /* Dark background color */
 }
 
-.image-gallery a:hover img{-webkit-filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%); filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%);}
+.main {
+  background: #fcfcfc; /* Light background for main content */
+  background-attachment: fixed; /* Fixed background */
+  padding: 60px 0 80px; /* Top, right/left, bottom padding */
+  position: relative; /* For relative positioning of elements */
+}
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {background: none;}
+.site-footer {
+  background: #0d2436; /* Dark background for footer */
+  min-height: 100px; /* Minimum footer height */
+  padding: 20px 0; /* Top, right/left, bottom padding */
+}
 
-.btn-primary {background: #d9230f!important; border: 1px solid #d9230f!important; font-weight: bold; color: rgba(255,255,255,0.75)!important;}
-.btn-primary:hover {color: rgba(255,255,255,0.9)!important;}
+/* Typography */
+h1 {
+  font-size: 33px; /* Heading 1 font size */
+  margin-top: 0; /* Remove top margin */
+  padding-top: 50px; /* Top padding */
+}
+
+.post-header h1 {
+  padding-top: 0; /* Remove top padding for post header h1 */
+}
+
+.post-header {
+  padding-top: 50px; /* Top padding for post header */
+}
+
+h2 {
+  font-size: 25px; /* Heading 2 font size */
+  margin-top: 0; /* Remove top margin */
+  padding-top: 50px; /* Top padding */
+}
+
+h3 {
+  font-size: 17px; /* Heading 3 font size */
+  margin: 0; /* Remove margins */
+  padding: 20px 0 3px; /* Top, right/left, bottom padding */
+}
+
+h4 {
+  font-size: 15px; /* Heading 4 font size */
+  margin: 0; /* Remove margins */
+  padding: 20px 0 3px; /* Top, right/left, bottom padding */
+}
+
+h3.post-meta {
+  padding: 0; /* Remove padding for post meta h3 */
+}
+
+p,
+pre,
+ul,
+ol {
+  margin-bottom: 18px; /* Bottom margin for paragraphs, pre, lists */
+}
+
+code {
+  color: #444444; /* Code text color */
+  background-color: #f5f5f5; /* Code background color */
+}
+
+pre code {
+  white-space: pre; /* Preserve whitespace in pre code */
+}
+
+/* Navigation */
+.navbar-brand > img {
+  display: inline; /* Display image inline */
+  position: relative; /* Relative positioning */
+  vertical-align: top; /* Vertical alignment */
+  bottom: 7px; /* Bottom adjustment */
+}
+
+.navbar-default {
+  border-color: #e5e5e5; /* Navbar border color */
+}
+
+.navbar-default svg {
+  position: absolute; /* Absolute positioning */
+  height: 40px; /* SVG height */
+  margin-top: -11px; /* Top margin adjustment */
+  margin-left: -4px; /* Left margin adjustment */
+  fill: #777; /* SVG fill color */
+  border: 12px solid white; /* White border */
+  border-left: 0; /* Remove left border */
+  border-right: 0; /* Remove right border */
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background: none; /* Remove background on hover/focus */
+}
+
+#togglemenu {
+  display: none; /* Hide toggle menu by default */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Buttons */
 .btn {
-    padding: 5px 10px!important;
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important;
+  padding: 5px 10px !important; /* Button padding */
+  box-shadow: none !important; /* Remove box shadow */
 }
+
+.btn-primary {
+  background: #d9230f !important; /* Primary button background */
+  border: 1px solid #d9230f !important; /* Primary button border */
+  font-weight: bold; /* Bold font weight */
+  color: rgba(255, 255, 255, 0.75) !important; /* Primary button text color */
+}
+
+.btn-primary:hover {
+  color: rgba(255, 255, 255, 0.9) !important; /* Primary button hover text color */
+}
+
 .btn-secondary {
-    border: 1px solid #d9230f!important;
-}
-.btn-secondary:hover {color: #d9230f;}
-
-.navbar-default svg {position: absolute; height: 40px; margin-top: -11px; margin-left: -4px; fill: #777; border: 12px solid white; border-left: 0; border-right: 0;}
-
-code {color: #444444; background-color: #f5f5f5;}
-pre code {white-space: pre;}
-
-@media (max-width: 767px) {
-    .download {margin-bottom: 12px; margin-top: -20px;}
-    .navbar-default svg {margin-left: -0px;}
+  border: 1px solid #d9230f !important; /* Secondary button border */
 }
 
-.sidebar-personal-info {
-  .sidebar-personal-info-section {
-    &:not(:first-of-type) {
-      margin-top: .75rem;
-    }
-    line-height: 1rem;
-    a, strong {
-      color: $green;
-      text-decoration: none;
-    }
-  }
+.btn-secondary:hover {
+  color: #d9230f; /* Secondary button hover text color */
+}
+
+/* Forms */
+.form-control {
+  height: 37px; /* Form control height */
+}
+
+/* Images */
+img {
+  display: block; /* Display as block */
+  max-width: 100%; /* Maximum width */
+}
+
+img.poweredby {
+  cursor: pointer; /* Pointer cursor */
+  display: inline-block; /* Display inline block */
+  height: 100px; /* Image height */
+  margin-right: 10px; /* Right margin */
+  margin-left: -8px; /* Left margin */
+  opacity: 0.35; /* Opacity */
+}
+
+/* Image Gallery */
+.image-gallery a img {
+  -webkit-filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%); /* Webkit filter */
+  filter: grayscale(100%) brightness(116%) contrast(83%) opacity(70%); /* Filter */
+  -webkit-transition: all 0.3s ease; /* Webkit transition */
+  -moz-transition: all 0.3s ease; /* Mozilla transition */
+  -o-transition: all 0.3s ease; /* Opera transition */
+  -ms-transition: all 0.3s ease; /* Microsoft transition */
+  transition: all 0.3s ease; /* Transition */
+}
+
+.image-gallery a:hover img {
+  -webkit-filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%); /* Webkit hover filter */
+  filter: grayscale(0%) brightness(100%) contrast(100%) opacity(100%); /* Hover filter */
+}
+
+/* Footer Links and Breadcrumbs */
+.site-footer a,
+#breadcrumbs,
+#breadcrumbs a {
+  color: #777777; /* Link and breadcrumb color */
+}
+
+.site-footer h3 {
+  color: silver; /* Footer h3 color */
+}
+
+/* Sidebar */
+.sidebar-personal-info .sidebar-personal-info-section {
+  line-height: 1rem; /* Line height */
+}
+
+.sidebar-personal-info .sidebar-personal-info-section:not(:first-of-type) {
+  margin-top: 0.75rem; /* Top margin for non-first section */
+}
+
+.sidebar-personal-info .sidebar-personal-info-section a,
+.sidebar-personal-info .sidebar-personal-info-section strong {
+  color: $green; /* Sidebar link and strong color */
+  text-decoration: none; /* Remove text decoration */
+}
+
+/* Blockquotes */
+#bq,
+#bqi {
+  background: #f9f9f9; /* Blockquote background */
+  border-left: 10px solid; /* Left border */
+  margin: 1.5em 10px; /* Margin */
+  padding: 0.5em 10px; /* Padding */
+  quotes: "\201C" "\201D" "\2018" "\2019"; /* Quotes */
+  text-align: justify; /* Justify text */
+}
+
+#bq {
+  border-left-color: #1a4464; /* Blockquote 1 left border color */
+}
+
+#bqi {
+  border-left-color: #777777; /* Blockquote 2 left border color */
+}
+
+#bq:before,
+#bqi:before {
+  font-size: 4em; /* Blockquote before font size */
+  line-height: 0.1em; /* Line height */
+  margin-right: 0.25em; /* Right margin */
+  vertical-align: -0.4em; /* Vertical alignment */
+  content: open-quote; /* Open quote content */
+}
+
+#bq:before {
+  color: #1a4464; /* Blockquote 1 before color */
+}
+
+#bqi:before {
+  color: #777777; /* Blockquote 2 before color */
+}
+
+#bq p,
+#bqi p {
+  display: inline; /* Display inline */
 }
 
 /* Changing Keywords */
 .rs-changing-keywords {
-  color: #1A4464 !important;
+  color: #1a4464 !important; /* Changing keyword color */
 }
 
-/* Blockquotes Styling */
-#bq {
-  background: #f9f9f9;
-  border-left: 10px solid #1A4464;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  text-align: justify;
-}
-#bq:before {
-  color: #1A4464;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-#bq p {
-  display: inline;
-}
-
-/* Inspiration bq */
-
-#bqi {
-  background: #f9f9f9;
-  border-left: 10px solid #777777;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-  text-align: justify;
-}
-#bqi:before {
-  color: #777777;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-#bqi p {
-  display: inline;
-}
-
-/* Blog content properties */
+/* Blog Content */
 #post-content-blog {
-  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #777777;
-    background-color: #fcfcfc;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font family */
+  font-size: 16px; /* Font size */
+  line-height: 1.42857143; /* Line height */
+  color: #777777; /* Text color */
+  background-color: #fcfcfc; /* Background color */
 }
 
 /* Post Navigation */
 .post-navigation-bottom {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex; /* Flex display */
+  justify-content: space-between; /* Space between elements */
+  flex-wrap: wrap; /* Wrap elements */
 }
+
 .post-navigation-bottom p {
-    flex: 1 1 0;
-    width: 45%;
+  flex: 1 1 0; /* Flex properties */
+  width: 45%; /* Width */
 }
+
 .post-navigation-bottom p:first-child {
-    padding-right: 0.5em;
+  padding-right: 0.5em; /* Right padding for first child */
 }
+
 .post-navigation-bottom p:last-child {
-    padding-left: 0.5em;
-    text-align: right;
+  padding-left: 0.5em; /* Left padding for last child */
+  text-align: right; /* Right align text */
 }
 
-/*toggle menu */
-#togglemenu {display: none; cursor: pointer;}
-@media (max-width: 1000px) {
-    #togglemenu {display: block;}
-    #menu ul {display: none;}
-    .menuopen #menu ul {display: block;}
+/* Download Button */
+.download {
+  float: right; /* Float right */
+  margin-top: 5px; /* Top margin */
 }
 
-/*Fb Comments Width Fix*/
-.fb_iframe_widget_fluid_desktop, .fb_iframe_widget_fluid_desktop span, .fb_iframe_widget_fluid_desktop iframe {
-            max-width: 100% !important;
-            width: 100% !important;
- }
-
-/*No Select Property */
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-/* Spotify */
+/* Spotify Embed */
 .embed-spotify {
-  position: relative;
-  padding-bottom: 100%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
+  position: relative; /* Relative positioning */
+  padding-bottom: 100%; /* Padding bottom */
+  height: 0; /* Height */
+  overflow: hidden; /* Hide overflow */
+  max-width: 100%; /* Maximum width */
 }
 
-.embed-spotify iframe, .embed-spotify object, .embed-spotify embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.embed-spotify iframe,
+.embed-spotify object,
+.embed-spotify embed {
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Top position */
+  left: 0; /* Left position */
+  width: 100%; /* Width */
+  height: 100%; /* Height */
 }
 
-   
+/* Facebook Comments */
+.fb_iframe_widget_fluid_desktop,
+.fb_iframe_widget_fluid_desktop span,
+.fb_iframe_widget_fluid_desktop iframe {
+  max-width: 100% !important; /* Maximum width */
+  width: 100% !important; /* Width */
+}
+
+/* No Select */
+.noselect {
+  -webkit-touch-callout: none; /* Disable webkit touch callout */
+  -webkit-user-select: none; /* Disable webkit user select */
+  -khtml-user-select: none; /* Disable konqueror user select */
+  -moz-user-select: none; /* Disable mozilla user select */
+  -ms-user-select: none; /* Disable microsoft user select */
+  user-select: none; /* Disable user select */
+}
+
+/* Responsive Styles */
+@media (max-width: 1000px) {
+  #togglemenu {
+    display: block; /* Show toggle menu on smaller screens */
+  }
+
+  #menu ul {
+    display: none; /* Hide menu list by default */
+  }
+
+  .menuopen #menu ul {
+    display: block; /* Show menu list when menu is open */
+  }
+}
+
+@media (max-width: 767px) {
+  .download {
+    margin-bottom: 12px; /* Bottom margin for download button */
+    margin-top: -20px; /* Top margin for download button */
+  }
+
+  .navbar-default svg {
+    margin-left: 0; /* Remove left margin for navbar svg */
+  }
+}

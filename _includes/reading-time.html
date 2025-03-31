@@ -1,18 +1,17 @@
-{% capture words %}
-  {{ page.content | number_of_words | minus: 10 }}
-{% endcapture %}
-{% unless words contains "-" %}
-  {{ words | plus: 10 | append: " words" }}
-{% endunless %}
-&#8214
-{% capture words %}
-  {{ page.content | number_of_words | minus: 10 }}
-{% endcapture %}
-{% assign words = page.content | number_of_words %}
-{% if words < 360 %}
-	1 minute read
+{% assign word_count = page.content | number_of_words %}
+
+{% if word_count > 0 %}
+  {% if word_count < 10 %}
+    {{ word_count }} words
+  {% else %}
+    {{ word_count | plus: 10 }} words
+  {% endif %}
+  &#8214;
+  {% if word_count < 180 %}
+    1 minute read
+  {% else %}
+    {{ word_count | plus: 10 | divided_by: 180 }} minute read
+  {% endif %}
 {% else %}
-{% unless words contains "-" %}
-  {{ words | plus: 10 | divided_by: 180 | append: " minute read" }}
-{% endunless %}
+  0 words &#8214; 0 minute read
 {% endif %}

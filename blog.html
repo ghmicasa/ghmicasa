@@ -4,27 +4,30 @@ layout: page
 description: These are my thoughts and take on various ideas and issues. This page contains list of all blogs. Checkout my notes also.
 ---
 
-<h4>This page contains list of all the blogs. If you are unable to locate any page, use site search tool <a style="color:#C0392B" href="/search">here</a>.</h4><br/>
+<p>
+  This page contains a list of all the blogs. If you are unable to locate any page,
+  use the site search tool <a style="color: #c0392b" href="/search">here</a>.
+</p>
 
+{% for post in site.posts %}
+  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
-{% for post in site.posts  %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-
-    {% if forloop.first %}
-    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
+  {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
     <ul>
-    {% endif %}
+  {% endif %}
 
-    <li>{{ post.date | date: "%d/%m/%Y" }} - <a href="{{ post.url }}">{{ post.title }}</a><br /></a></li>
+  <li>
+    {{ post.date | date: "%d/%m/%Y" }} -
+    <a href="{{ post.url }}" aria-label="Read {{ post.title }}">{{ post.title }}</a>
+  </li>
 
-    {% if forloop.last %}
+  {% if forloop.last %}
     </ul>
-    {% else %}
-        {% if this_year != next_year %}
-        </ul>
-        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-        <ul>
-        {% endif %}
-    {% endif %}
+  {% elsif this_year != next_year %}
+    </ul>
+    <h2 id="{{ next_year }}-ref">{{ next_year }}</h2>
+    <ul>
+  {% endif %}
 {% endfor %}

@@ -1,9 +1,16 @@
 <script>
-    var elements = document.querySelectorAll('a');
-    Array.prototype.forEach.call(elements, function(el, i){
-        if(el.innerHTML.substring(0,1)=='[' && el.innerHTML.substring(el.innerHTML.length-1)==']') {
-            el.innerHTML = el.innerHTML.substring(1,el.innerHTML.length-1);
-            el.classList.add('btn');
-        }
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const links = document.querySelectorAll('a');
+  const prefix = '[';
+  const suffix = ']';
+  const buttonClass = 'btn';
+
+  links.forEach(link => {
+    const text = link.textContent.trim();
+    if (text.startsWith(prefix) && text.endsWith(suffix)) {
+      link.textContent = text.slice(1, -1);
+      link.classList.add(buttonClass);
+    }
+  });
+});
 </script>

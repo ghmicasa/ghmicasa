@@ -1,19 +1,32 @@
 {% include header.html %}
 <div class="col-md-8">
-		<article class="post page">
-        <header class="post-header">
-            {% include breadcrumbs.html %}
-            <h1 class="post-title">{{ page.title }}</h1>
-        </header>
-        <div class="post-content noselect">
-            {{ content }}
-                <ul>
-                    {% assign site-notes = site.notes | sort: 'title' %}
-                    {% for item in site-notes %}
-                    <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-                    {% endfor %}
-                </ul><br />
-        </div>
-    </article>
+  <article class="post page">
+    <header class="post-header">
+      {% include breadcrumbs.html %}
+      <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+    <div class="post-content noselect">
+      {{ content }}
+      <nav aria-label="Notes">
+        <ul>
+          {% assign site_notes = site.notes | sort: 'title' %}
+          {% for item in site_notes %}
+            <li>
+              <a href="{{ item.url }}" aria-label="Read note: {{ item.title }}">
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </article>
 </div>
 {% include footer.html %}
+
+<style>
+.post-content ul {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+</style>

@@ -1,12 +1,24 @@
 <div class="embed-spotify">
- <iframe src="https://open.spotify.com/embed/playlist/5UkFOTNOyPEvNkig6tpoWp" 
-        width="600" 
-        height="480" 
-        frameborder="0" 
-        allowtransparency="true"
-        allow="encrypted-media"
-        webkitallowfullscreen
-        mozallowfullscreen
-        allowfullscreen>
-</iframe>
+  <iframe
+    src="https://open.spotify.com/embed/playlist/5UkFOTNOyPEvNkig6tpoWp?"
+    title="Spotify Embed"
+    frameborder="0"
+    allow="encrypted-media"
+    allowfullscreen
+    sandbox="allow-scripts allow-same-origin allow-popups"
+    loading="lazy"
+  ></iframe>
 </div>
+
+<style>
+  .embed-spotify iframe {
+    width: 100%; /* Make it responsive */
+    max-width: 700px; /* Set a maximum width */
+    height: 720px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+</style>
+

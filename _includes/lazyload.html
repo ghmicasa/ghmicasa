@@ -1,7 +1,7 @@
 <script>
-(function (root, factory) {
+  (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
-      define(function() {
+      define(function () {
         return factory(root);
       });
     } else if (typeof exports === 'object') {
@@ -10,58 +10,166 @@
       root.echo = factory(root);
     }
   })(this, function (root) {
-  
     'use strict';
-  
-    var echo = {};
-  
-    var callback = function () {};
-  
-    var offset, poll, delay, useDebounce, unload;
-  
-    var isHidden = function (element) {
-      return (element.offsetParent === null);
+
+    const echo = {};
+
+    let callback = () => {};
+    let offset = { t: 0, b: 0, l: 0, r: 0 };
+    let poll;
+    let delay;
+    let useDebounce;
+    let unload;
+    let observer; // Intersection Observer instance
+
+    const isHidden = (element) => {
+      return element.offsetParent === null;
     };
-    
-    var inView = function (element, view) {
+
+    const inView = (element, view) => {
       if (isHidden(element)) {
         return false;
       }
-  
-      var box = element.getBoundingClientRect();
-      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+      const box = element.getBoundingClientRect();
+      return (
+        box.right >= view.l &&
+        box.bottom >= view.t &&
+        box.left <= view.r &&
+        box.top <= view.b
+      );
     };
-  
-    var debounceOrThrottle = function () {
-      if(!useDebounce && !!poll) {
+
+    const debounceOrThrottle = () => {
+      if (!useDebounce && !!poll) {
         return;
       }
       clearTimeout(poll);
-      poll = setTimeout(function(){
+      poll = setTimeout(() => {
         echo.render();
         poll = null;
       }, delay);
     };
-  
-    echo.init = function (opts) {
+
+    const loadElement = (element) => {
+      let src;
+      if (unload) {
+        element.setAttribute('data-echo-placeholder', element.src);
+      }
+
+      if (element.getAttribute('data-echo-background') !== null) {
+        element.style.backgroundImage = `url(${element.getAttribute('data-echo-background')})`;
+      } else if (element.src !== (src = element.getAttribute('data-echo'))) {
+        element.src = src;
+      }
+
+      if (!unload) {
+        element.removeAttribute('data-echo');
+        element.removeAttribute('data-echo-background');
+      }
+      callback(element, 'load');
+    };
+
+    const unloadElement = (element) => {
+      let src;
+       if (element.getAttribute('data-echo-placeholder') && (src = element.getAttribute('data-echo-placeholder'))) {
+        if (element.getAttribute('data-echo-background') !== null) {
+          element.style.backgroundImage = `url(${src})`;
+        } else {
+          element.src = src;
+        }
+        element.removeAttribute('data-echo-placeholder');
+        callback(element, 'unload');
+      }
+    };
+
+    echo.init = (opts) => {
       opts = opts || {};
-      var offsetAll = opts.offset || 0;
-      var offsetVertical = opts.offsetVertical || offsetAll;
-      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
-      var optionToInt = function (opt, fallback) {
-        return parseInt(opt || fallback, 10);
-      };
+      const offsetAll = opts.offset || 0;
+      const offsetVertical = opts.offsetVertical || offsetAll;
+      const offsetHorizontal = opts.offsetHorizontal || offsetAll;
+
+      const optionToInt = (opt, fallback) => parseInt(opt || fallback, 10);
+
       offset = {
         t: optionToInt(opts.offsetTop, offsetVertical),
         b: optionToInt(opts.offsetBottom, offsetVertical),
         l: optionToInt(opts.offsetLeft, offsetHorizontal),
-        r: optionToInt(opts.offsetRight, offsetHorizontal)
+        r: optionToInt(opts.offsetRight, offsetHorizontal),
       };
       delay = optionToInt(opts.throttle, 250);
       useDebounce = opts.debounce !== false;
       unload = !!opts.unload;
       callback = opts.callback || callback;
-      echo.render();
+
+      if ('IntersectionObserver' in window && opts.useIntersectionObserver !== false) {
+        // Use Intersection Observer if available and not explicitly disabled
+        echo.observerInit(opts);
+      } else {
+        // Fallback to the original scroll/load event listener method
+        echo.scrollInit();
+      }
+    };
+
+    echo.observerInit = (opts) => {
+      const observerOptions = {
+        rootMargin: `${offset.t}px ${offset.r}px ${offset.b}px ${offset.l}px`,
+        threshold: opts.threshold || 0, // You can customize the threshold
+      };
+
+      observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            loadElement(entry.target);
+            observer.unobserve(entry.target); // Stop observing after loading
+          } else if (unload) {
+            unloadElement(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      echo.render = function (context) {
+        const nodes = (context || document).querySelectorAll(
+          '[data-echo], [data-echo-background]'
+        );
+        nodes.forEach((node) => {
+          observer.observe(node);
+        });
+        if (!nodes.length) {
+          echo.detach();
+        }
+      };
+    };
+
+    echo.scrollInit = () => {
+      echo.render = function (context) {
+        const nodes = (context || document).querySelectorAll(
+          '[data-echo], [data-echo-background]'
+        );
+        const length = nodes.length;
+        const view = {
+          l: 0 - offset.l,
+          t: 0 - offset.t,
+          b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+          r: (root.innerWidth || document.documentElement.clientWidth) + offset.r,
+        };
+
+        for (let i = 0; i < length; i++) {
+          const elem = nodes[i];
+          if (inView(elem, view)) {
+            loadElement(elem);
+            if (!unload){
+              elem.removeAttribute('data-echo');
+              elem.removeAttribute('data-echo-background');
+            }
+          } else if (unload) {
+            unloadElement(elem);
+          }
+        }
+        if (!length) {
+          echo.detach();
+        }
+      };
+
       if (document.addEventListener) {
         root.addEventListener('scroll', debounceOrThrottle, false);
         root.addEventListener('load', debounceOrThrottle, false);
@@ -70,77 +178,33 @@
         root.attachEvent('onload', debounceOrThrottle);
       }
     };
-  
-    echo.render = function (context) {
-      var nodes = (context || document).querySelectorAll('[data-echo], [data-echo-background]');
-      var length = nodes.length;
-      var src, elem;
-      var view = {
-        l: 0 - offset.l,
-        t: 0 - offset.t,
-        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
-        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
-      };
-      for (var i = 0; i < length; i++) {
-        elem = nodes[i];
-        if (inView(elem, view)) {
-  
-          if (unload) {
-            elem.setAttribute('data-echo-placeholder', elem.src);
-          }
-  
-          if (elem.getAttribute('data-echo-background') !== null) {
-            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-echo-background') + ')';
-          }
-          else if (elem.src !== (src = elem.getAttribute('data-echo'))) {
-            elem.src = src;
-          }
-  
-          if (!unload) {
-            elem.removeAttribute('data-echo');
-            elem.removeAttribute('data-echo-background');
-          }
-  
-          callback(elem, 'load');
+
+    echo.detach = () => {
+      if ('IntersectionObserver' in window) {
+        if (observer) {
+          observer.disconnect();
         }
-        else if (unload && !!(src = elem.getAttribute('data-echo-placeholder'))) {
-  
-          if (elem.getAttribute('data-echo-background') !== null) {
-            elem.style.backgroundImage = 'url(' + src + ')';
-          }
-          else {
-            elem.src = src;
-          }
-  
-          elem.removeAttribute('data-echo-placeholder');
-          callback(elem, 'unload');
-        }
-      }
-      if (!length) {
-        echo.detach();
-      }
-    };
-  
-    echo.detach = function () {
-      if (document.removeEventListener) {
-        root.removeEventListener('scroll', debounceOrThrottle);
       } else {
-        root.detachEvent('onscroll', debounceOrThrottle);
+        if (document.removeEventListener) {
+          root.removeEventListener('scroll', debounceOrThrottle);
+        } else {
+          root.detachEvent('onscroll', debounceOrThrottle);
+        }
+        clearTimeout(poll);
       }
-      clearTimeout(poll);
     };
-  
+
     return echo;
-  
   });
 </script>
 <script>
-    echo.init({
-      offset: 2500,
-      throttle: 250,
-      unload: false,
-      callback: function (element, op) {
-        //console.log(element, 'has been', op + 'ed')
-      }
-    });
+  echo.init({
+    offset: 2500,
+    throttle: 250,
+    unload: false,
+    callback: function (element, op) {
+      //console.log(element, 'has been', op + 'ed')
+    },
+    useIntersectionObserver: true, // Enable Intersection Observer
+  });
 </script>

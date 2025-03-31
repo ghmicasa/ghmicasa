@@ -1,20 +1,22 @@
-<!--Collapse Click-->
-<script type="text/javascript">
-	$(function() {
-  $('#ChangeToggle').click(function() {
-    $('#navbar-hamburger').toggleClass('hidden');
-    $('#navbar-close').toggleClass('hidden');  
+<script>
+$(document).ready(function() {
+  const $changeToggle = $('#ChangeToggle');
+  const $navbarHamburger = $('#navbar-hamburger');
+  const $navbarClose = $('#navbar-close');
+  const $navbar = $('.navbar');
+  const $collapse = $('.collapse'); // Corrected selector
+
+  $changeToggle.on('click', function() {
+    $navbarHamburger.toggleClass('hidden');
+    $navbarClose.toggleClass('hidden');
+  });
+
+  $(document).on('click', function(event) {
+    if (!$navbar.is(event.target) && $navbar.has(event.target).length === 0) {
+      $collapse.collapse('hide'); // Use the correct jQuery method
+      $navbarClose.addClass('hidden');
+      $navbarHamburger.removeClass('hidden');
+    }
   });
 });
-</script>
-<!--Anywhere Collapse-->
-<script>
-	$(document).on("click", function(event){
-        var $trigger = $(".navbar");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
-            $('.collapse').collapse('hide');
-        $('#navbar-close').addClass('hidden');
-        $('#navbar-hamburger').removeClass('hidden');
-        }            
-    });
 </script>
