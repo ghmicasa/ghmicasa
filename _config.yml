@@ -67,7 +67,3 @@ comments:
     appid: #  Add your Facebook App ID
     num_posts: 5 #  (default) - Explicitly stated
     colorscheme: "light" # (default), "dark" - Explicitly stated
-
-# Exclude - Keeping regular posts and linked posts seperately
-exclude:
-  - linked_posts
