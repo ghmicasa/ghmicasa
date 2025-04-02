@@ -337,3 +337,17 @@ img.poweredby {
     margin-left: 0; /* Remove left margin for navbar svg */
   }
 }
+
+.mermaid {
+            background-color: #fcfcfc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1200px;
+}
+.mermaid svg {
+                width: 100%;
+                height: auto;
+                font-size: 14px;
+}
