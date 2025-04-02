@@ -2,12 +2,32 @@
 title: Indian Philosophy
 accordion: 
   - title: Charvaka
-    content:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae urna eu nulla lobortis aliquam. Suspendisse facilisis dolor magna, ac ultricies mauris aliquam id. Duis at hendrerit augue. Etiam et ultricies odio. Nam imperdiet, ipsum porttitor pharetra convallis, erat odio vestibulum ligula, at interdum risus felis a neque. Maecenas tellus turpis, consequat eu lacus nec, ullamcorper feugiat velit. Sed id risus id nunc pellentesque consectetur a id tellus. Aenean scelerisque, magna ut egestas vulputate, odio dui feugiat metus, non feugiat nulla mauris ut nisl. Phasellus malesuada tempor nisl, aliquam interdum orci cursus id. Fusce ut erat erat. Duis ac interdum lacus. 
+    content:
+  - title: Ajivika
+    content:
+  - title: Jainism
+    content:
+  - title: Buddhism
+    content:
+  - title: Madhyamika
+    content:
+  - title: Sankhya
+    content:
+  - title: Yoga
+    content:
+  - title: Nyaya
+    content:
+  - title: Vaiseshika
+    content:
+  - title: Mimansa
+    content:
   - title: Shankracharya
-    content:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae urna eu nulla lobortis aliquam. Suspendisse facilisis dolor magna, ac ultricies mauris aliquam id. Duis at hendrerit augue. Etiam et ultricies odio. Nam imperdiet, ipsum porttitor pharetra convallis, erat odio vestibulum ligula, at interdum risus felis a neque. Maecenas tellus turpis, consequat eu lacus nec, ullamcorper feugiat velit. Sed id risus id nunc pellentesque consectetur a id tellus. Aenean scelerisque, magna ut egestas vulputate, odio dui feugiat metus, non feugiat nulla mauris ut nisl. Phasellus malesuada tempor nisl, aliquam interdum orci cursus id. Fusce ut erat erat. Duis ac interdum lacus.
+    content:
+  - title: Ramanujacharya
+    content:
+  - title: Madhvacharya
+    content:
+  - title: Sri Aurobindo
+    content:
 ---
-The journey (parallel development) of Indian Philosophy from Charvaka to Madhavacharya.
-<br/>
 &nbsp; &nbsp; &nbsp; {% include accordion.html %}
-<br/>
-As of now you will only find dummy text. I have been busy and couldn't write much. Hopefully, I'll fill this space soon.

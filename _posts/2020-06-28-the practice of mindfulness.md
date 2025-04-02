@@ -1,13 +1,12 @@
 ---
 title: The practice of mindfulness.
-description: Thoughts are powerful. A thought of winning a race gives adrenaline rush, a physical process in the body. If these thoughts make way into the subconscious world from the conscious world, the body behaves accordingly.
-date: "2020-06-28 04:00:00 +0530"
+description: Thoughts are powerful. The thought of winning a race triggers an adrenaline rush, a tangible physical response. When these thoughts permeate from the conscious to the subconscious, the body reacts accordingly.
+date: "2020-06-28 15:00:00 +0530"
 ---
+Thoughts are powerful. The thought of winning a race triggers an adrenaline rush, a tangible physical response. When these thoughts permeate from the conscious to the subconscious, the body reacts accordingly.
 
-Thoughts are powerful. A thought of winning a race gives adrenaline rush, a physical process in the body. If these thoughts make way into the subconscious world from the conscious world, the body behaves accordingly. 
+Positive thoughts empower you, while negative ones can destroy you from within. On the conscious level, you can reason with and manipulate these thoughts. However, once they enter the subconscious, the dynamic shifts entirely. Escape or ignore them, you cannot.
 
-If it’s a positive thought, it will give you wings to fly, and if it’s negative thought, it will destroy you, eat you from inside. If it’s on conscious plane, you can reason it and play with it, but if it makes way into your subconscious world then the entire game changes. You can’t escape it or ignore it.
+Bringing thoughts from the subconscious to the conscious, and deliberately transferring them in the opposite direction, is challenging. It demands depth of thought, rigorous reasoning, and significant mental energy. This practice is known as 'mindfulness.'
 
-It’s difficult to bring things from the subconscious world into the conscious world, and deliberately transfer thoughts from the conscious world into the subconscious world. All it requires is depth of thought, depth of reasoning, and a humongous amount of physical energy. This is called the practice of “mindfulness.”
-
-The connection between mind and body is real, and is very beautiful.
+The mind-body connection is a tangible and profound reality.

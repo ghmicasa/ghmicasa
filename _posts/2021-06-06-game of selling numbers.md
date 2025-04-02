@@ -1,19 +1,16 @@
 ---
 title: Game of selling numbers.
-description: The game of selling numbers. It was so hilarious, and I kept laughing, I couldn’t control the joy of reflecting on things which plays with the human psychology.
-date: "2021-05-06 04:00:00 +0530"
+description: The game of selling numbers is truly amusing. I couldn't help but laugh, reflecting on how it manipulates human psychology.
+date: "2021-05-06 17:00:00 +0530"
 ---
+The game of selling numbers is truly amusing. I couldn't help but laugh, reflecting on how it manipulates human psychology.
 
-The game of selling numbers. It was so hilarious, and I kept laughing, I couldn’t control the joy of reflecting on things which plays with the human psychology.
+He said, “So, what’s next? Phone with five cameras? ,” and I laughed so hard.
 
-He said, “So, what’s next? Phone with five cameras? ,” and I laughed so hard. 
+It began with our discussion on how increasing numbers influence human psychology. A few years ago, a new entrant in mobile technology, with a limited user base, had to compete with established giants. This company devised a clever strategy: selling numbers instead of technology. They marketed their products with numerical specifications, and it proved effective. Phones with multiple cameras, higher RAM, and higher screen resolutions were promoted. As these numbers were presented to consumers, it revealed their deep-seated desire for quantity. Everyone became obsessed with 'higher is better,' and as the numbers increased, so did our desires.
 
-It all started with our discussion on how numbers, when the count increases, affects human psychology. 
+Fast forward a few years, and everyone in the market is simply selling numbers. The artistry has lost its appeal, and now it's all about numerical adjustments.
 
-A few years back we saw a new entrant in mobile technology. This new company, relatively new to market, without much user base had to compete with the older gaints. The new entrant came up with a genius idea of selling numbers rather than technology, and started marketing its product with numbers, and it all worked. Phones with multiple number of cameras, higher ram, higher screen resolution and what not. As these numbers were flashed onto the glittering eyes of humans, it exposed the deepest desires of them, their love for numbers. We saw everyone getting crazy, higher the better. As the numbers kept on increasing, our desire kept on expanding. 
+The days when technology focused on innovation, artistry, and beautiful research are gone. Now, we must adapt to a world of numbers.
 
-Fast forward, few year later, everyone in the market is just selling numbers. The art lost its charm and now it's all about adjusting with numbers.
-
-Those days are gone when the technology was all about bringing something new, something innovative, the art and research of producing something beautiful. As for now, we'll have to adjust with numbers.
-
-The way everything is advertised, it’s so hilarious. Although, nothing wrong with it, that’s the way things work, and everyone fell for the genius idea of selling numbers.
+The way everything is advertised is quite amusing. While there's nothing inherently wrong with it, it's simply how the market operates, and everyone succumbed to the clever strategy of selling numbers.
