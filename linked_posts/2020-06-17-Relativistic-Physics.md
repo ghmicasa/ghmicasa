@@ -3,7 +3,6 @@ layout: linked_post
 title: Relativistic Physics
 permalink: /linked_posts/Relativistic-Physics/
 ---
-<br/>
 Why the velocity $v$ is taken as a value and the definition of velocity not applied on a relativistic equations?
 <br/>
 <hr>

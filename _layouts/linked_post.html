@@ -18,7 +18,9 @@
     </header>
     <span class="reading-time">{% include reading-time.html %}</span>
     <div class="post-content noselect">
-      {{ content }}
+      <div class="content-spacing">
+        {{ content }}
+      </div>
       <div class="share-buttons-container">
         {% include share-buttons.html %}
       </div>
@@ -34,6 +36,11 @@
 .share-buttons-container {
     margin-top: 20px; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust as needed */
+}
+
+.content-spacing {
+    margin-top: 30px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
 }
 
 .back-link {
