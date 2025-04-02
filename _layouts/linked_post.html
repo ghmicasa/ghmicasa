@@ -24,9 +24,7 @@
       <div class="share-buttons-container">
         {% include share-buttons.html %}
       </div>
-      <a href="/notes" aria-label="Back to notes" class="back-link">
-        &larr; Back
-      </a>
+      <div id="back-link"></div>
     </div>
   </article>
 </div>
@@ -50,3 +48,13 @@
 
 /* Add any other necessary styles for spacing */
 </style>
+
+ <script>
+    window.onload = function() {
+      var referrer = document.referrer;
+      if (referrer) {
+        var backLink = document.getElementById('back-link');
+        backLink.innerHTML = '<a href="' + referrer + '">&larr; Back</a>';
+      }
+    };
+  </script>
