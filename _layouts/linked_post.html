@@ -1,0 +1,45 @@
+{% include header.html %}
+<div class="col-md-8">
+  <article class="post page">
+    <header class="post-header">
+      {% include breadcrumbs.html %}
+      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+      <h3 class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </time>
+        {% if page.author %}
+          •
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ page.author }}</span>
+          </span>
+        {% endif %}
+      </h3>
+    </header>
+    <span class="reading-time">{% include reading-time.html %}</span>
+    <div class="post-content noselect">
+      {{ content }}
+      <div class="share-buttons-container">
+        {% include share-buttons.html %}
+      </div>
+      <a href="/notes" aria-label="Back to notes" class="back-link">
+        &larr; Back
+      </a>
+    </div>
+  </article>
+</div>
+{% include footer.html %}
+
+<style>
+.share-buttons-container {
+    margin-top: 20px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.back-link {
+    margin-top: 20px; /* Adjust as needed */
+    display: block; /* Ensure the link is on its own line */
+}
+
+/* Add any other necessary styles for spacing */
+</style>

@@ -41,6 +41,10 @@ collections:
   notes:
     output: true
     permalink: /notes/:path/
+  linked_posts:
+    output: true
+    permalink: /linked_posts/:title/
+    layout: linked_posts
 
 
 # Input methods -  grouping
