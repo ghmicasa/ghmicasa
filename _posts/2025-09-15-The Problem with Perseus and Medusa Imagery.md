@@ -1,6 +1,5 @@
 ---
 title: The Problem with Perseus and Medusa Imagery.
-description: My critique is rooted in an abstract idea, it's not about gender, but about the message carried by the essence of the myth. This imagery or depiction gives us a clear message - a beautiful essence, which can be interpreted as pure justice, is punished in this mortal world. Storytelling and artistic depictions have, whether intentionally or unintentionally, invariably carried this message over the centuries since its inception. This also asks us to reflect that the essence of true beauty, no matter how narratives are shaped in any era, cannot hide its purity.
 ---
 <b>Perseus and Medusa in the act. Inspired by Canova's sculpture.</b>
 
