@@ -7,11 +7,11 @@ author: Roopesh Singh
 ## **The Philosophy of Fluidic Integration: A Synthesis of Benevolent Adaptability**
 
 <figure style="text-align: center;">
-  <div style="display: flex; justify-content: flex-start; gap: 20px;">
-    <img src="/img/Blog/2025/Fluid.jpg" alt="Fluid Artwork 1" style="max-width: 35%; height: auto;">
-    <img src="/img/Blog/2025/Fluid2.jpg" alt="Fluid Artwork 2" style="max-width: 35%; height: auto;">
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <img src="/img/Blog/2025/Fluid.jpg" alt="Fluid Artwork 1" style="max-width: 32%; height: auto;">
+    <img src="/img/Blog/2025/Fluid2.jpg" alt="Fluid Artwork 2" style="max-width: 32%; height: auto;">
   </div>
-  <figcaption>Two beautiful fluid artworks by <a href="https://x.com/nakaji_miyako?t=9MhjPM2wMkbpFsNrFvs20A&s=09">Miyako Nakaji</a></figcaption>
+  <figcaption>Artworks by <a href="https://x.com/nakaji_miyako?t=9MhjPM2wMkbpFsNrFvs20A&s=09">Miyako Nakaji</a></figcaption>
 </figure>
 <br/>
 In an era perpetually defined by ideological skirmishes, dogmatic assertions, and the constricting embrace of binary thought, the very insistence upon fixed principles has paradoxically become a source of profound fragmentation and intellectual stagnation. We come across this everyday in our life. This philosophy contends that the contemporary crisis of human existence doesn't spring from an absence of truth, but rather from an unyielding demand for its singular, immutable manifestation. Consequently, it champions a radical re-evaluation of being, knowledge, and action, proposing **Fluidic Integration** as the essential pathway to authentic engagement, profound self-realization, and a more harmonious collective existence.
