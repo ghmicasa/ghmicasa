@@ -36,9 +36,9 @@ h1 {
 }
 
 h2 {
-  font-size: 25px; /* Heading 2 font size */
-  margin-top: 0; /* Remove top margin */
-  padding-top: 50px; /* Top padding */
+  font-size: 21px;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h3 {
