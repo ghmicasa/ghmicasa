@@ -7,7 +7,7 @@ author: Roopesh Singh
 <b>Perseus and Medusa in the act. Inspired by Canova's sculpture.</b>
 
 <figure style="text-align: center;">
-  <img src="/img/The Problem with Perseus and Medusa Imagery.jpg" alt="The Problem with Perseus and Medusa Imagery" style="display: block; margin: 0 auto;">
+  <img src="/img/Blog/2025/The Problem with Perseus and Medusa Imagery.jpg" alt="The Problem with Perseus and Medusa Imagery" style="display: block; margin: 0 auto;">
   <figcaption>The imagery inspired by Canova's work.</figcaption>
 </figure>
 <br/>
