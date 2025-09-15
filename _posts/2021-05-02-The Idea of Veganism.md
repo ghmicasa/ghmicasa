@@ -2,6 +2,7 @@
 title: The idea of veganism.
 description: Searching on the internet about Veganism lead me to many definitions, and the philosophy behind Veganism. Gathering all these definitions, it seems the opinion that I have made is a simple one, veganism is just another type of food habit preferred by certain individuals. Veganism is a practice of abstaining from animal products, and rejecting commodity status of animals.
 date: "2021-05-02 14:00:00 +0530"
+author: Roopesh Singh
 ---
 Searching on the internet about Veganism lead me to many definitions, and the philosophy behind it. Gathering all these definitions, it seems the opinion that I have made is a simple one, Veganism is just another type of food habit preferred by certain individuals. It is a practice of abstaining from animal products, and rejecting commodity status of the animals.
 

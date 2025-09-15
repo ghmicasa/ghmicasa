@@ -2,6 +2,7 @@
 title: Game of selling numbers.
 description: The game of selling numbers is truly amusing. I couldn't help but laugh, reflecting on how it manipulates human psychology.
 date: "2021-05-06 17:00:00 +0530"
+author: Roopesh Singh, Gyan Prakash Navendu
 ---
 The game of selling numbers is truly amusing. I couldn't help but laugh, reflecting on how it manipulates human psychology.
 

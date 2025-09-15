@@ -2,6 +2,7 @@
 title: Whirlpool of self-deception.
 description: We all encounter situations we dislike, experiences that clash with our personal beliefs. For me, that concept is duality. While duality itself is not inherently wrong, it is a personal preference that currently eludes my comprehension. Perhaps I may embrace it in the future, but for now, it remains a point of contention.
 date: "2020-06-14 18:00:00 +0530"
+author: Roopesh Singh
 ---
 We all encounter situations we dislike, experiences that clash with our personal beliefs. For me, that concept is duality. While duality itself is not inherently wrong, it is a personal preference that currently eludes my comprehension. Perhaps I may embrace it in the future, but for now, it remains a point of contention.
 

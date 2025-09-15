@@ -19,6 +19,7 @@ accordion:
     content: The eighth day is devoted to Maa Mahagauri, the eighth form of Goddess Durga. The name Mahagauri translates to “supreme white or fair.” She symbolizes purity, serenity, and tranquility.<br/><br/>The disciple is in sync with the energies of the universe and is ready for the interplay of the divine masculine and feminine.
   - title: Day 9 - Devoted to Maa Siddhidatri
     content: On the final day, the ninth day, Goddess Durga's form is Maa Siddhidatri. The name translates to “bestowed with Siddhi⁵.” She symbolizes the attainment of spiritual fulfillment.<br/><br/>The Navratri festival culminates on this day.
+author: Roopesh Singh
 ---
 Today marks the commencement of Chaitra Navratri, a sacred nine-day festival dedicated to Goddess Durga and her nine divine forms. These nine forms are associated with the multifaceted energies of the divine feminine that permeate the universe.
 

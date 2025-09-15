@@ -2,6 +2,7 @@
 title: Teachings of Hermes Trismegistus.
 description: During communication, either two people speak different languages and meanings are lost in translation, or two people communicate in the same language but meaning differs. Let me rephrase the question, “Is it possible to transfer true fragrance of thoughts from one individual to another?”
 date: "2025-03-01 16:57:00 +0530"
+author: Roopesh Singh
 ---
 Hermes Trismegistus, the thrice greatest, a legendary figure, a man with great knowledge and wisdom.
 

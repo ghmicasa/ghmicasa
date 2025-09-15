@@ -9,6 +9,7 @@ accordion:
   - title: The Mutual Purpose Fulfillment
     content: Finally, there's the realm of "mutual purpose fulfillment." Here, the foundation is built on a clear understanding of give and take. While the thrill of constant discovery may be absent, there's a sense of stability and shared goals. Desires are met, needs are fulfilled, and a deep, enduring friendship blossoms. It’s a smooth, well-defined path, where both individuals find their objectives realized. It is not necessarily passionate, but it is reliable.
 date: "2020-06-14 11:00:00 +0530"
+author: Roopesh Singh
 ---
 Love, that elusive and multifaceted emotion, defies a single, fixed definition. It's a spectrum of experiences, a tapestry woven with countless threads of feeling. What follows is a fragile attempt to categorize its broad strokes, acknowledging that real-life relationships are fluid and ever-evolving. Each category, in its own way, holds a unique beauty, a testament to the dynamic nature of human connection.
 <br/>

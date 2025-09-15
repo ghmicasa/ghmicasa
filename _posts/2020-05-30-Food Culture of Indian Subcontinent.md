@@ -2,6 +2,7 @@
 title: Food culture of Indian subcontinent
 description: There was a time when humanity stood helpless against nature's wrath. Sudden losses from unseen diseases were common. In those times, Ayurvedic doctors faced the daunting task of protecting lives from these silent killers. This writing honors their commitment to building a healthy society.
 date: "2020-05-30 14:00:00 +0530"
+author: Roopesh Singh
 ---
 There was a time when humanity stood helpless against nature's wrath. Sudden losses from unseen diseases were common. In those times, Ayurvedic doctors faced the daunting task of protecting lives from these silent killers. This writing honors their commitment to building a healthy society.
 

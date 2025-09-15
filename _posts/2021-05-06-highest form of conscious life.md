@@ -2,6 +2,7 @@
 title: Plants are highest form of conscious life.
 description: These plants and trees are life forms that exist on this planet devoid of consciousness. The fruit hanging from the tree is here to provide us with food, not only to satisfy our hunger but also to delight our palate.
 date: "2021-05-06 15:00:00 +0530"
+author: Roopesh Singh, Gyan Prakash Navendu
 ---
 Why plants are the highest form of conscious life?
 

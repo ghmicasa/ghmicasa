@@ -2,6 +2,7 @@
 title: The Problem with Perseus and Medusa Imagery.
 description: My critique is rooted in an abstract idea, it's not about gender, but about the message carried by the essence of the myth. This imagery or depiction gives us a clear message - a beautiful essence, which can be interpreted as pure justice, is punished in this mortal world. Storytelling and artistic depictions have, whether intentionally or unintentionally, invariably carried this message over the centuries since its inception. This also asks us to reflect that the essence of true beauty, no matter how narratives are shaped in any era, cannot hide its purity.
 date: "2025-09-14 23:59:00 +0530"
+author: Roopesh Singh
 ---
 <b>Perseus and Medusa in the act. Inspired by Canova's sculpture.</b>
 
@@ -14,7 +15,7 @@ date: "2025-09-14 23:59:00 +0530"
 
 I was having a debate with someone about the imagery used for International Falsely Accused Day. The person on the other side was convinced the image, a sculpture of Perseus holding Medusa's head, was perfect. I had a different point of view, and I couldn't help but feel that using this imagery, without proper reflection, is profoundly problematic.
 
-My critique is rooted in an abstract idea, it's not about gender, but about the message carried by the essence of the myth. This imagery or depiction gives us a clear message - a beautiful essence, which can be interpreted as pure justice, is punished in this mortal world. Storytelling and artistic depictions have, whether intentionally or unintentionally, invariably carried this message over the centuries since its inception. This also asks us to reflect that the essence of true beauty, no matter how narratives are shaped in any era, cannot hide its purity.
+My critique is rooted in an abstract idea, it's not about gender, but about the message carried by the essence of the myth. This imagery or depiction gives us a clear message - a beautiful essence, which can be interpreted as purity of abstract, is punished in this mortal world. Storytelling and artistic depictions have, whether intentionally or unintentionally, invariably carried this message over the centuries since its inception. This also asks us to reflect that the essence of true beauty, no matter how narratives are shaped in any era, cannot hide its purity.
 
 <b>Injustice in Three Eras</b>
 
@@ -38,6 +39,6 @@ After doing this, he then depicts Perseus as a symbol of justice, but he does so
 
 <b>Conclusion: Final Thought</b>
 
-The key takeaway: We must free Medusa and her beauty. 
+The key takeaway: We must free Medusa and her beauty. The beauty of pure essence of abstract representing innocence.
 
-If this imagery is to be used as poster for the International Falsely Accused Day, it must be used as Medusa being falsely accused, not as Perseus delivering justice as a justice delivery agent. Hence, using it without meta-level analysis and understanding is problematic.
+If this imagery is to be used as poster for the International Falsely Accused Day, it must be used as Medusa being falsely accused, not as Perseus delivering justice as a justice delivery agent. Even if we decide do that, it perpetuates injustice, like in every other era. The meta-level analysis and understanding imagery is problematic.

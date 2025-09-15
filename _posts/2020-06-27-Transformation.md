@@ -2,6 +2,7 @@
 title: Transformation.
 description: In a solitary phase, migratory locusts are generally green, camouflaged to blend with their background. They are normally less aggressive. However, when they grow up in crowded places, a strange mutation occurs the swarming phase. They become darker and aggressive. In order to survive, when there is not enough food for all, they become destructive.
 date: "2020-06-27 13:00:00 +0530"
+author: Roopesh Singh
 ---
 In a solitary phase, migratory locusts are generally green, camouflaged to blend with their background. They are normally less aggressive. However, when they grow up in crowded places, a strange mutation occurs: the swarming phase. They become darker and aggressive. In order to survive, when there is not enough food for all, they become destructive.
 

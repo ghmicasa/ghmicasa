@@ -2,6 +2,7 @@
 title: The practice of mindfulness.
 description: Thoughts are powerful. The thought of winning a race triggers an adrenaline rush, a tangible physical response. When these thoughts permeate from the conscious to the subconscious, the body reacts accordingly.
 date: "2020-06-28 15:00:00 +0530"
+author: Roopesh Singh
 ---
 Thoughts are powerful. The thought of winning a race triggers an adrenaline rush, a tangible physical response. When these thoughts permeate from the conscious to the subconscious, the body reacts accordingly.
 
