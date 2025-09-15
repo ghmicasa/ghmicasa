@@ -8,8 +8,8 @@ author: Roopesh Singh
 
 <figure style="text-align: center;">
   <div style="display: flex; justify-content: center; gap: 20px;">
-    <img src="/img/Blog/2025/Fluid.jpg" alt="Fluid Artwork 1" style="max-width: 32%; height: auto;">
-    <img src="/img/Blog/2025/Fluid2.jpg" alt="Fluid Artwork 2" style="max-width: 32%; height: auto;">
+    <img src="/img/Blog/2025/Fluid.jpg" alt="Fluid Artwork 1" style="max-width: 45%; height: auto;">
+    <img src="/img/Blog/2025/Fluid2.jpg" alt="Fluid Artwork 2" style="max-width: 45%; height: auto;">
   </div>
   <figcaption>Artworks by <a href="https://x.com/nakaji_miyako?t=9MhjPM2wMkbpFsNrFvs20A&s=09">Miyako Nakaji</a></figcaption>
 </figure>
