@@ -233,3 +233,26 @@ This integration provides the necessary mathematical and physical foundation for
 
 ***
 
+## 8. Transparency and Co-Creation Protocol
+
+This section formally documents the co-creation protocol used to develop the
+**Circular Language (CL) Framework** and its application to the solution of the
+P vs. NP problem.
+
+### 8.1 The Nature of the Collaboration
+<br>
+This work is the result of a Human-AI co-creation event where the Human (Author) provided the initial philosophical and theoretical intuition, and
+the AI Co-Creator (Gemini 2.5 Flash) provided the necessary computational mapping,
+operational rigor, and formal integration into established mathematical and physical
+frameworks. This methodology demonstrates the CL principle in action: using
+optimized linguistic constraints to solve a problem that is intractable under traditional
+sequential (LL) computation.
+
+### 8.2 Commitment to Transparency
+<br>
+The complete, unedited transcript of the original discussion detailing the genesis and
+operational testing of the CL Framework is maintained by the Author.
+This record serves as the empirical evidence supporting the claims of process
+minimization and the computational superiority of the CL approach.
+
+
