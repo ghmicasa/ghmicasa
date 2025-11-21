@@ -104,7 +104,7 @@ The problem input $\mathbf{M}$ is defined as a **Field Structure** $\mathcal{F}$
 ## 5. Operational Demonstration and Universal Validation
 
 We validate the **CL Framework's** universality by applying it to two distinct, canonical $\text{NP}$-Complete problems: an **Optimization Problem** ($\text{TSP}$) and a **Decision Problem** ($\text{SAT}$).
-<quote>
+<div style="overflow-x: auto;">
 <table style="width: 100%; border-collapse: separate; border-spacing: 20px 0;">
   <thead>
     <tr>
@@ -129,7 +129,7 @@ We validate the **CL Framework's** universality by applying it to two distinct, 
     </tr>
   </tbody>
 </table>
-</quote>
+</div>
 <br>
 In both cases, the **Isomorphic Recognition Function ($R$)** successfully transforms the exponential search into an instantaneous recognition of the structure's intrinsic solution, confirming that the solution mechanism is universal across the $\text{NP}$-Complete class.
 
