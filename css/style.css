@@ -351,3 +351,35 @@ img.poweredby {
                 height: auto;
                 font-size: 14px;
 }
+
+/* Style for the button container */
+.code-header {
+    display: flex; /* Aligns items */
+    justify-content: flex-end; /* Pushes button to the right */
+    background: #444; /* Dark background to match code block themes */
+    padding: 5px 10px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-top: 1em; /* Space above the code block */
+}
+
+/* Style for the Copy button itself */
+.copy-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.8em;
+    transition: background 0.3s ease;
+}
+
+.copy-button:hover {
+    background: #0056b3;
+}
+
+/* Adjust the margin of the code block so it fits snuggly below the header */
+.highlight {
+    margin-top: 0;
+}

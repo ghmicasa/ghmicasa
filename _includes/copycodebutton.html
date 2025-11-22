@@ -1,0 +1,27 @@
+function copyCode(buttonElement) {
+    // 1. Get the parent 'code-header' div.
+    let codeHeader = buttonElement.closest('.code-header');
+    
+    // 2. Find the immediately following 'figure' block containing the code.
+    let codeBlock = codeHeader.nextElementSibling.querySelector('code');
+    
+    // 3. Select the code text.
+    let codeText = codeBlock.innerText || codeBlock.textContent;
+
+    // 4. Use the Clipboard API to copy the text.
+    navigator.clipboard.writeText(codeText).then(() => {
+        // 5. Provide temporary feedback to the user.
+        buttonElement.innerText = "Copied!";
+        
+        // 6. Reset the button text after 2 seconds.
+        setTimeout(() => {
+            buttonElement.innerText = "Copy";
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+        buttonElement.innerText = "Error";
+        setTimeout(() => {
+            buttonElement.innerText = "Copy";
+        }, 2000);
+    });
+}
