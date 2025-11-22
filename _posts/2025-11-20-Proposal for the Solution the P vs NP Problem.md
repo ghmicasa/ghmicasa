@@ -271,7 +271,9 @@ This section provides script/code to test the CL framework for different NP-Comp
 The complete computational repository, formally documented with $\text{DOI}$ $10.5281/\text{zenodo.17666969}$, houses the scripts necessary for replicating the benchmark results. The primary goal is to verify the instantaneous recognition of the Minimum Structural Isomorph ($\Omega$) across diverse problem classes ($\text{TSP}, 3\text{-SAT}, \text{Graph Coloring}$). Key simulation results are noted, demonstrating substantial speedups:
 
 $\text{TSP} (\mathbf{N}=60)$: $2,190\times$ speedup compared to $\text{OR-Tools}$.
+
 <br>
+
 $3\text{-SAT} (120 \text{ vars})$: $258\times$ speedup compared to $\text{Glucose}$. 
 
 Replication requires a standard Python environment with specialized scientific dependencies, including numpy, networkx, and quantum-computational libraries such as qutip for implementing the quantum-inspired mechanics, alongside classical solvers like ortools and pysat for establishing a rigorous Linear Language ($\text{LL}$) baseline.
