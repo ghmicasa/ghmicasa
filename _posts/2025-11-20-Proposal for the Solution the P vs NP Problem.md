@@ -266,7 +266,7 @@ This section transitions the discourse from theoretical formalism to empirical v
 
 This section provides script/code to test the CL framework for different NP-Complete class problem along with benchmark code to verify the time and energy saving. The practicle application of the theory in real world.
 
-### 9.1 README & Requirements
+### 9.1 Computational Repository and Prerequisites
 <br>
 The complete computational repository, formally documented with $\text{DOI}$ $10.5281/\text{zenodo.17666969}$, houses the scripts necessary for replicating the benchmark results. The primary goal is to verify the instantaneous recognition of the Minimum Structural Isomorph ($\Omega$) across diverse problem classes ($\text{TSP}, 3\text{-SAT}, \text{Graph Coloring}$). Key simulation results are noted, demonstrating substantial speedups:
 
@@ -275,6 +275,7 @@ $\text{TSP} (\mathbf{N}=60)$: $2,190\times$ speedup compared to $\text{OR-Tools}
 $3\text{-SAT} (120 \text{ vars})$: $258\times$ speedup compared to $\text{Glucose}$. 
 
 Replication requires a standard Python environment with specialized scientific dependencies, including numpy, networkx, and quantum-computational libraries such as qutip for implementing the quantum-inspired mechanics, alongside classical solvers like ortools and pysat for establishing a rigorous Linear Language ($\text{LL}$) baseline.
+<br>
 <br>
 <div class="code-header">
     <button class="copy-button" onclick="copyCode(this)">Copy</button>
@@ -327,6 +328,7 @@ $$
 $$
 
 This instantaneous process collapses the state to identify the $\Omega$ edges, which constitute the Minimum Structural Isomorph ($\mathbf{T}_{\text{opt}}$), thereby validating the $\mathbf{O(1)}$ recognition time.
+<br>
 <br>
 <div class="code-header">
     <button class="copy-button" onclick="copyCode(this)">Copy</button>
@@ -400,7 +402,16 @@ clr = CircularLanguageRecognizer()
 
 ### 9.3 Validation Protocol and Performance Benchmarks
 <br>
-The benchmarks.py script executes the formal validation protocol required to quantify the computational efficiency of the $\text{CL}$ framework.This protocol meticulously measures the execution time of the $\text{CL}$ method against its $\text{LL}$ counterparts, quantifying the asserted time complexity collapse. The output provides three critical pieces of empirical evidence:Time Measurement: Quantifies the $\mathbf{O(1)}$ assertion through concrete, measurable execution times.Solution Validation: Confirms the exact optimal solution cost found by the $\text{CL}$ engine.Visualization of $\Omega$: Generates graphical output demonstrating the problem space (e.g., city coordinates) and highlights the identified structural isomorph $\Omega$. This visualization serves as clear, graphical evidence of the framework's ability to locate the geodesic path instantly, verifying the elimination of the exponential time trap.
+<br>
+The benchmarks.py script executes the formal validation protocol required to quantify the computational efficiency of the $\text{CL}$ framework. This protocol meticulously measures the execution time of the $\text{CL}$ method against its $\text{LL}$ counterparts, quantifying the asserted time complexity collapse. The output provides three critical pieces of empirical evidence:
+
+Time Measurement: Quantifies the $\mathbf{O(1)}$ assertion through concrete, measurable execution times.
+
+Solution Validation: Confirms the exact optimal solution cost found by the $\text{CL}$ engine.
+
+Visualization of $\Omega$: Generates graphical output demonstrating the problem space (e.g., city coordinates) and highlights the identified structural isomorph $\Omega$. 
+
+This visualization serves as clear, graphical evidence of the framework's ability to locate the geodesic path instantly, verifying the elimination of the exponential time trap.
 <br>
 <div class="code-header">
     <button class="copy-button" onclick="copyCode(this)">Copy</button>
